@@ -1,0 +1,244 @@
+/* ==============HEADER============== */
+header {
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	/* border-bottom: 1px solid var(--primary-color); */
+}
+
+.navbar-top {
+	height: 2.5em;
+
+	width: 100vw;
+}
+.navbar-main {
+	height: 3.7rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 90vw;
+	margin: 0 auto;
+}
+
+.logo {
+	cursor: pointer;
+}
+
+.nav-menu {
+	position: relative;
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.menu-icon {
+	font-size: 1.7em;
+	padding: 0.5em;
+	color: #b83443;
+}
+.menu-hamburguesa {
+	cursor: pointer;
+}
+/* ========MENU========= */
+.pushbar {
+	background: var(--primary-color);
+	display: flex !important;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-evenly;
+	color: white;
+}
+
+.nav-menu .title {
+	height: 4em;
+	font-size: 1.5em;
+	text-align: center;
+	justify-self: flex-start;
+}
+
+.menu {
+	display: flex;
+	height: 35%;
+	flex-flow: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.menu li {
+	list-style: none;
+	font-size: 0.8em;
+	font-weight: 800;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+.menu li:hover {
+	color: rgba(50, 28, 172, 0.822);
+	cursor: pointer;
+}
+
+.close {
+	width: 1.5em;
+	height: 1.5em;
+	position: absolute;
+	cursor: pointer;
+	top: 1.5em;
+	right: 1.5em;
+}
+.close:before,
+.close:after {
+	position: absolute;
+	left: 0.75em;
+	content: ' ';
+	height: 1.5em;
+	width: 0.2em;
+	background-color: #fff;
+}
+.close:before {
+	transform: rotate(45deg);
+}
+.close:after {
+	transform: rotate(-45deg);
+}
+
+/* menu logo COLOR WHITE */
+.pushbar .title {
+	align-self: center;
+}
+.pushbar .logo-remax * {
+	color: white !important;
+}
+.pushbar #remax {
+	font-size: 1.5em;
+}
+.pushbar #metropolis {
+	font-size: 1.2em;
+	align-self: center;
+}
+.pushbar .logo-remax .border-slash {
+	background: var(--primary-color) !important;
+}
+.pushbar .logo-remax .slash {
+	background: white !important;
+}
+
+/* =========FOOTER========== */
+footer {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	background: rgb(131, 131, 139);
+	background: linear-gradient(180deg, rgba(131, 131, 139, 1) 0%, rgba(31, 31, 36, 0.9864320728291317) 90%);
+}
+.footer-top {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100vw;
+	height: auto;
+}
+/* ---- */
+
+.f-license-remax {
+	height: 35vh;
+	width: 100vw;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	background: #334c97;
+}
+
+.f-license-remax span,
+.f-license-remax a {
+	font-weight: bold;
+	text-align: center;
+	padding: 2px 1%;
+}
+.f-license-remax a {
+	text-decoration: none;
+	color: black;
+	font-size: 1em;
+	letter-spacing: 0.05em;
+	white-space: nowrap;
+}
+.f-license-remax a i {
+	color: rgb(102, 20, 20);
+	font-style: normal;
+}
+.f-license-remax a i span {
+	color: blue;
+	font-weight: bold;
+}
+/* ....... */
+
+.f-social-networks {
+	height: 10%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	max-width: 400px;
+	padding: 1.5em 0;
+}
+.f-social-networks a {
+	text-decoration: none;
+	color: rgb(190, 190, 190);
+	cursor: pointer;
+}
+.f-social-networks .fab {
+	/* font-size: 1.5em; */
+	font-size: 2em;
+}
+
+.fa-facebook:hover {
+	color: #121497;
+}
+.fa-instagram:hover {
+	color: #ce5e6b;
+}
+.fa-youtube:hover {
+	color: #b31c2e;
+}
+/* -------- */
+.f-contacto {
+	width: 100%;
+	padding: 0 0 1em 0;
+	display: flex;
+	flex-flow: column;
+	flex-wrap: wrap;
+	white-space: pre-wrap;
+
+	color: rgb(190, 190, 190);
+}
+.f-contacto span {
+	padding: 0.6em 0;
+	white-space: pre-line;
+	text-align: center;
+	text-justify: distribute-all-lines;
+}
+.f-contacto span a {
+	text-decoration: none;
+	color: rgb(190, 190, 190);
+}
+.f-contacto span ::before {
+	padding: 0 0.5em 0 0;
+}
+
+/* ---- */
+.footer-bottom {
+	height: auto;
+	font-size: 0.7em;
+	padding: 0 0 1.5em 0;
+	text-align: center;
+	color: rgb(190, 190, 190);
+}
+.footer-bottom a {
+	text-decoration: none;
+	color: rgb(190, 190, 190);
+}
+.footer-bottom a:hover {
+	color: #d6581d;
+}

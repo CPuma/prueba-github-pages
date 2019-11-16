@@ -1,0 +1,23 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Nunito Sans', sans-serif;
+}
+html {
+	font-size: 16px;
+}
+/* ============= VARIABLES ============ */
+:root {
+	/* --primary-color: rgb(220, 28, 46); */
+	--primary-color: #bd2939;
+	--secondary-color: #003da5;
+}
+
+.hidden {
+	display: none;
+}
+.fixed {
+	position: fixed;
+}
+
+
