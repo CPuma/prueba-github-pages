@@ -10,12 +10,19 @@
   display: flex;
   justify-content: center;
   margin-bottom: 1em;
-  min-width: 300px;
+  /* min-width: 300px; */
 }
 .splide__slide {
   min-width: 280px;
-  max-width: 85vw;
+  /* max-width: 85vw; */
 
+}
+.card-slider-track{
+  border-radius: .2em;
+  -webkit-border-radius: .2em;
+  -moz-border-radius: .2em;
+  -ms-border-radius: .2em;
+  -o-border-radius: .2em;
 }
 
 .splide__track {
@@ -28,17 +35,17 @@
 
 .card {
   height: 100%;
-  width: 92%;
-  border-radius: .2em;
-
+  /*width: 85%;
+  */width: 80%;
   min-width: 300px;
   margin: auto;
-  background: yellow;
+  background: rgb(223, 35, 35);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 2fr 1fr;
   justify-self: center;
   justify-content: center;
+
 }
 
 .card_img {

@@ -1,37 +1,59 @@
+@font-face {
+	font-family: 'Arial CE Regular';
+	src: url(/assets/fonts/arial_ce/ArialCE.ttf) format('ttf');
+}
+@font-face {
+	font-family: 'Arial CE Bold';
+	src: url(/assets/fonts/arial_ce/ArialCEBold.ttf) format('ttf');
+}
+
 * {
-    padding: 0;
-    margin: 0;
-    font-family: 'Nunito Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  /* font-family: "Nunito Sans", sans-serif; */
+  font-family: "Arial CE Regular", sans-serif;
 }
 
 html {
-    font-size: 16px;
+  font-size: 16px;
 }
-
 
 /* ============= VARIABLES ============ */
 
 :root {
-    /* --primary-color: rgb(220, 28, 46); */
-    --primary-color: #bd2939;
-    --secondary-color: #003da5;
+  /* --primary-color: rgb(220, 28, 46); */
+  --primary-color: #bd2939;
+  --secondary-color: #003da5;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .fixed {
-    position: fixed;
+  position: fixed;
 }
-body{
-    max-width: 100vw;
+body {
+  max-width: 100vw;
 }
 .container {
-    max-width: 1200px;
+  max-width: 1100px;
 
-    width: 95%;
-    justify-self: center;
-    align-self: center;
-    /* height: auto; */
+  width: 95%;
+  justify-self: center;
+  align-self: center;
+
+  /* height: auto; */
+}
+
+input[type="text"] {
+  box-shadow: none;
+}
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline-offset: 0px !important
+  ;
+  outline: none !important;
 }

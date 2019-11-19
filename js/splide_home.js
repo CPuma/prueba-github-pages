@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     cover: true,
     focus: true,
     lazyload: true,
+    lazyload:true,
     // width: '100vw',
     breakpoints: {
       "750": { perPage: 1 },

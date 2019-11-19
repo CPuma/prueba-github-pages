@@ -1,15 +1,14 @@
 main.home {
   margin-top: 60px;
-  display: grid;
   width: 100%;
   height: auto;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(9, minmax(100px, auto));
-  grid-template-areas: "portada" "ultimas-propiedades" "valuaciones" " nuestros-asesores" " se-un-asesor" "ultimas-noticias" "blog" "contactanos" "como-llegar";
 }
 
+/* ==================================================0
+ */
+
+/* ==============    PORTADA  ===========*/
 .portada {
-  grid-area: "portada";
   width: 100%;
   height: calc(100vh - 60px);
   display: grid;
@@ -17,52 +16,6 @@ main.home {
   grid-template-rows: 1fr 3fr;
   background: gray;
 }
-
-.ultimas-propiedades {
-  grid-area: "ultimas-propiedades";
-  width: 100%;
-  height: auto;
-  background: rgb(241, 85, 85);
-  padding: 1em 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.valuaciones {
-  grid-area: "valuaciones";
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.nuestros-asesores {
-  grid-area: "nuestros-asesores";
-}
-
-.se-un-asesor {
-  grid-area: "se-un-asesor";
-}
-
-.ultimas-noticias {
-  grid-area: "ultimas-noticias";
-}
-
-.blog {
-  grid-area: "blog";
-}
-
-.contactanos {
-  grid-area: "contactanos";
-}
-
-.como-llegar {
-  grid-area: "como-llegar";
-}
-
-/* ==================================================0
- */
-
-/* ==============    PORTADA  ===========*/
 
 .portada .frase {
   align-self: flex-end;
@@ -76,7 +29,7 @@ main.home {
   text-shadow: 0em 0em 1em #d42f2f;
 }
 
-.portada .form-filtros {
+.form-filtros {
   justify-self: center;
   align-self: center;
   display: flex;
@@ -89,10 +42,10 @@ main.home {
   /* background: hsla(0, 34%, 49%, 0.438); */
 }
 
-.portada .form-filtros .form-item {
+.form-item {
   margin-top: 1em;
   height: 2em;
-  width: 80%;
+  width: 350px;
   background: #fafafa;
   overflow: hidden;
   border-radius: 0.4em;
@@ -101,7 +54,9 @@ main.home {
   -ms-border-radius: 0.4em;
   -o-border-radius: 0.4em;
 }
-
+.form-item.select {
+  width: 350px;
+}
 /* ======  SELECT BOX */
 
 select,
@@ -180,41 +135,103 @@ button {
   width: 100%;
   height: 100%;
   color: #3b3a3a;
-  text-indent: 1.2em;
   appearance: none;
   overflow: hidden;
   border: none;
 }
-
+.form-item input {
+  text-indent: 1.2em;
+}
 .form-item button {
-  background: rgb(220, 28, 46);
+  background: rgb(216, 5, 26);
   font-size: 1em;
   color: #fafafa;
+  cursor: pointer;
 }
+.form-item button:hover {
+  background: rgb(216, 5, 26);
+  font-size: 1em;
+  color: #fafafa;
+  font-weight: 700;
+}
+@media (min-width: 750px) {
+  .form-filtros {
+    max-width: 1000px;
+    width: 90%;
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .form-item {
+    height: 2.5em;
+    line-height: 2.5em;
+    font-size: 1.1em;
 
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
+  .form-item.button {
+    width: 15%;
+    max-width: 200px;
+  }
+
+  .form-item.input {
+    width: 45%;
+    max-width: 300px;
+  }
+  .form-item input[type="text"] {
+    font-size: 0.85em;
+  }
+
+  .form-item.select {
+    width: 25%;
+    max-width: 170px;
+  }
+  .form-item.select::after {
+    padding: 0 0.3em;
+    text-indent: 0.2em;
+  }
+}
 /* ============ULTIMAS PROPIEDADES============== */
+
+.ultimas-propiedades {
+  width: 100%;
+  height: auto;
+  /* background: rgb(241, 85, 85); */
+  /* background: rgb(241, 85, 85); */
+  padding: 1em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+}
+/* === */
 
 .grid-area-titulo {
   width: 90%;
-  max-width: 1100px;
+  max-width: 960px;
   display: flex;
-  justify-content: space-between;
-  align-content: center;
-  font-size: 0.8em;
-  margin: 1em 0;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0;
 }
 .grid-area-titulo h3 {
-  color: white;
-  font-size: 1em;
-  text-transform: uppercase;
-  font-weight: 1000;
-  letter-spacing: 0.05em;
-  padding-right: 3em;
+  /* color: white; */
+  /* color: red; */
+  font-size: 1.3em;
+  font-family: 'Arial CE Bold', Helvetica, sans-serif;
+  /* letter-spacing: 0.05em; */
 }
 .grid-area-titulo a {
   text-decoration: none;
   color: blue;
-  line-height: 1em;
+  line-height: 0.5em;
+  display: none;
 }
 
 .grid-area-titulo .ultimas-propiedades .cards-container {
@@ -228,8 +245,12 @@ button {
 }
 @media (min-width: 700px) {
   .grid-area-titulo {
-      width:82%;
-    justify-content: flex-start;
+    width: 82%;
+    justify-content: space-between;
+  }
+  .grid-area-titulo a{
+    padding-left: 3em;
+    display: block;
   }
 }
 
@@ -237,4 +258,93 @@ button {
 
 /* VALUACIONES */
 
+.valuaciones {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9e7e7;
 
+  width: 100%;
+  min-height: 450px;
+  overflow: hidden;
+  text-align: center;
+}
+/* === */
+.valuaciones h3 {
+  font-size: 1.4em;
+  padding-bottom: 1em;
+}
+
+.valuaciones p {
+  display: none;
+}
+.valuaciones button {
+  width: 200px;
+  height: 2.5em;
+  font-size: 1em;
+  /* font-weight: 500; */
+  background: none;
+  cursor: pointer;
+  /* text-decoration: underline; */
+
+  border: 0.05em solid #928e8e;
+  color: #928e8e;
+  letter-spacing: 0.05em;
+
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+}
+.valuaciones button:hover {
+  text-decoration: none;
+  color: black;
+  border-width: 0.1em;
+}
+
+.gratis {
+  height: 35px;
+  width: 210px;
+  background-color: #cf121b;
+  position: absolute;
+  top: 30px;
+  right: -40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  color: #fff;
+  font-size: 1.2em;
+
+  white-space: nowrap;
+  -webkit-transform: rotate(38deg);
+  -moz-transform: rotate(38deg);
+  -ms-transform: rotate(38deg);
+  -o-transform: rotate(38deg);
+  transform: rotate(38deg);
+}
+
+@media (min-width: 700px) {
+  .valuaciones {
+    padding: 2em 0;
+  }
+  .valuaciones p {
+    display: block;
+    margin: auto;
+    max-width: 550px;
+    text-align: justify;
+    padding: 1em 0 2em 0;
+  }
+} /* ======================================== */
+.se-un-asesor {
+}
+
+.contactanos {
+}
+
+.como-llegar {
+}
