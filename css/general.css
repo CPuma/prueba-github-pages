@@ -1,23 +1,37 @@
 * {
-	padding: 0;
-	margin: 0;
-	font-family: 'Nunito Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
 }
+
 html {
-	font-size: 16px;
+    font-size: 16px;
 }
+
+
 /* ============= VARIABLES ============ */
+
 :root {
-	/* --primary-color: rgb(220, 28, 46); */
-	--primary-color: #bd2939;
-	--secondary-color: #003da5;
+    /* --primary-color: rgb(220, 28, 46); */
+    --primary-color: #bd2939;
+    --secondary-color: #003da5;
 }
 
 .hidden {
-	display: none;
+    display: none;
 }
+
 .fixed {
-	position: fixed;
+    position: fixed;
 }
+body{
+    max-width: 100vw;
+}
+.container {
+    max-width: 1200px;
 
-
+    width: 95%;
+    justify-self: center;
+    align-self: center;
+    /* height: auto; */
+}

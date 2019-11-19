@@ -1,15 +1,179 @@
+.splide__arrow--prev {
+  left: 0;
+}
+
+.splide__arrow--next {
+  right: 0;
+}
+
+.splide {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+  min-width: 300px;
+}
+.splide__slide {
+  min-width: 280px;
+  max-width: 85vw;
+
+}
+
+.splide__track {
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  /* padding-left: 40px; */
+  width: 90%;
+}
+
 .card {
-	height: 100%;
-	background: yellow;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 2fr 1fr;
+  height: 100%;
+  width: 92%;
+  border-radius: .2em;
+
+  min-width: 300px;
+  margin: auto;
+  background: yellow;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
+  justify-self: center;
+  justify-content: center;
 }
+
 .card_img {
-	height: 250px;
-	width: auto;
+  position: relative;
+  height: 250px;
+  width: 100%;
 }
+
 .card_img img {
-	height: 100%;
-	width: auto;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* DESTADO */
+
+.card_destacado {
+  position: absolute;
+  top: 5%;
+  background: rgba(255, 0, 0, 0.781);
+  max-width: 70%;
+  height: 1.5em;
+  border-radius: 0 0.2em 0.2em 0;
+  display: flex;
+  padding: 0 1.2em;
+  align-items: center;
+}
+
+.card_destacado p {
+  color: white;
+  line-height: 1.2em;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+/* -------- */
+
+/* caracteristicas */
+
+.card_caracteristicas {
+  position: absolute;
+  right: 10%;
+  top: 15%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+
+.card_caracteristicas p {
+  font-size: 1.2em;
+  font-weight: 800;
+  color: white;
+  text-shadow: 0em 0em 3em #03ff2d;
+}
+
+.card_caracteristicas .fas {
+  width: 1em;
+  padding-left: 0.3em;
+}
+
+.card_caracteristicas .fas sup {
+  font-size: 0.5em;
+}
+
+.card_tipo_propiedad {
+  position: absolute;
+  bottom: 3%;
+  height: 1.5em;
+  background: green;
+  max-width: 70%;
+  padding: 0 1.2em;
+
+  font-size: 1em;
+  font-weight: 550;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  border-radius: 0 0.2em 0.2em 0;
+}
+/* ------- */
+
+.card_descripcion {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: row; */
+}
+.card_descripcion_propiedad {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.card_precio {
+  font-size: 1.6em;
+}
+.card_precio .tipo_moneda {
+  font-size: 0.65em;
+  font-weight: 600;
+  margin-right: 0.5em;
+}
+
+.card_descripcion_agente {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card_descripcion_agente p {
+  font-size: 0.8em;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  line-height: .8em;
+  text-align: center;
+  padding-bottom: .3em;
+  text-transform: capitalize;
+}
+.card_descripcion_agente p span{
+    font-size: 0.8em;
+    font-weight: 600;
+
+}
+
+.card_descripcion_agente img {
+  width: 3.5em;
+  border-radius: 50%;
+  padding-bottom: .2em;
+}
+.card_descripcion_agente span {
+  font-weight: 600;
 }
