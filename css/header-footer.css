@@ -159,7 +159,10 @@ header {
 .pushbar .logo-remax .slash {
   background: white !important;
 }
-
+.pushbar .h-sociales {
+  justify-self: flex-end;
+  bottom: 0 !important;
+}
 /* =========FOOTER========== */
 footer {
   width: 100%;

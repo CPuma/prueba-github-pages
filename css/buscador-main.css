@@ -1,44 +1,52 @@
 main {
-  margin: 70px auto 50px auto;
+  margin: 55px auto 50px auto;
   /* margin-top: 60px; */
-  width: 98%;
+  width: 97%;
   max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 60px minmax(600px, auto);
+  grid-template-rows: minmax(90px, auto) minmax(600px, auto);
   grid-template-areas:
-    'filtros-2 '
+    'opciones '
     ' propiedades';
   justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
 @media (min-width: 850px) {
   main {
-    margin-top: 100px;
+    margin-top: 90px;
     grid-template-columns: 270px 3fr;
-    grid-template-rows: 60px minmax(500px, auto) auto;
+    grid-template-rows: 60px minmax(500px, auto);
     grid-template-areas:
-      'filtros-2 filtros-2 '
-      'filtros-1 propiedades '
-      'nulo propiedades ';
+      'opciones opciones '
+      'filtros propiedades '
+      /* 'nulo propiedades '; */
   }
 }
 
-.filtros-2 {
-  grid-area: filtros-2;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 1rem;
-  /* background: 0 gray; */
+.opciones {
+  grid-area: opciones;
+
+  box-sizing: border-box;
   font-size: 0.8rem;
-}
-.filtros-1 {
-  grid-area: filtros-1;
+  margin: 0.5rem 0;
+
   display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.filtros {
+  /* padding: 1rem 0; */
+  grid-area: filtros;
+  display: flex;
+  height: fit-content;
   flex-direction: column;
 
   background: #d1d0d0;
+  color: #2e2b2b !important;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -74,9 +82,6 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(auto-fill, minmax(270px, 1fr));
   }
-  .card {
-    /* width: 98%; */
-  }
 }
 @media (min-width: 950px) {
   .propiedades {
@@ -87,82 +92,149 @@ main {
 }
 
 /* ======== FILTROS  2=============*/
-.filtros-2 .orden {
+
+.opciones .orden {
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: 2rem;
+  margin: 0.5rem;
   justify-content: space-between;
   align-items: center;
 }
-.filtros-2 .breadcrumbs ul li {
+.opciones .acciones {
+  width: 100%;
+  background: #fafafa;
+  padding: 0.3rem 0.2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.opciones .acciones button {
+  padding: 0.5rem;
+  width: 150px;
+  text-align: center;
+}
+.opciones .acciones i {
+  padding-right: 0.5rem;
+}
+.opciones .acciones .activar-filtro {
+  background: #cc1111;
+  color: white;
+}
+.opciones .acciones .ver-mapa {
+  background: #4faebe;
+  color: white;
+}
+
+.opciones .breadcrumbs ul li {
   display: inline-block;
   padding-right: 0.3em;
 }
-.filtros-2 .breadcrumbs {
+.opciones .breadcrumbs {
   display: none;
 }
 
 @media (min-width: 850px) {
-  .filtros-2 .breadcrumbs {
+  .opciones {
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 0 0.5rem;
+    justify-content: space-between;
+  }
+  .opciones .breadcrumbs {
     display: block;
   }
-  .filtros-2 .orden {
-    width: 300px;
+  .opciones .orden {
+    width: calc(100% - 280px);
+  }
+  .opciones .acciones {
+    display: none;
   }
 }
 
 /* --------- */
 /* =========== FILTROS 1================= */
 
-.filtros-1 {
-  /* position: relative; */
+.filtros {
   font-size: 0.85rem;
   display: flex;
-  left: 0;
-  top: 0;
-  /* display: none;  */
+  justify-content: unset;
+  height: max-content;
 }
 
-.filtros-1 > div {
+.filtros > div {
   position: relative;
   margin: 1.5rem 0.8rem;
   margin-bottom: 0.5rem;
   padding-top: 0.8rem;
+  color: #2e2b2be5;
 }
-.filtros-1 .titulo {
+.filtros > div.push_left {
+  width: 90%;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #2e2b2be5;
+}
+.cerrar-filtros {
+  width: 1.5em;
+  height: 1.5em;
+  position: absolute;
+  cursor: pointer;
+  font-size: 1rem;
+  top: -0.5em;
+  right: 0.5em;
+}
+.cerrar-filtros:before,
+.cerrar-filtros:after {
+  position: absolute;
+  left: 0.75em;
+  content: ' ';
+  height: 1.5em;
+  width: 0.2em;
+  background-color: #2e2b2be5;
+}
+.cerrar-filtros:before {
+  transform: rotate(45deg);
+}
+.cerrar-filtros:after {
+  transform: rotate(-45deg);
+}
+
+.filtros .titulo {
   position: absolute;
   top: -0.7rem;
 }
-.filtros-1 .filtro {
+.filtros .filtro {
   position: relative;
   width: 100%;
 }
-.filtros-1 .filtro select {
+.filtros .filtro select {
   position: relative;
   width: 100%;
   height: 2.2rem;
   border: none;
 }
-.filtros-1 .filtro select option {
+.filtros .filtro select option {
   border: none;
   box-shadow: none;
 }
-.filtros-1 .filtro .tipo-moneda {
+.filtros .filtro .tipo-moneda {
   width: 100%;
   margin-bottom: 0.4rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.filtros-1 .filtro .tipo-moneda label {
+.filtros .filtro .tipo-moneda label {
   display: flex;
 }
-.filtros-1 .filtro .tipo-moneda input {
+.filtros .filtro .tipo-moneda input {
   margin-right: 0.3rem;
 }
 
-.filtros-1 .filtro .monto,
-.filtros-1 .filtro .metros2 {
+.filtros .filtro .monto,
+.filtros .filtro .metros2 {
   height: 2.2rem;
   overflow: hidden;
 
@@ -170,12 +242,12 @@ main {
   justify-content: center;
   align-items: center;
 }
-.filtros-1 .filtro .monto span,
-.filtros-1 .filtro .metros2 span {
+.filtros .filtro .monto span,
+.filtros .filtro .metros2 span {
   padding: 0 0.4em;
 }
-.filtros-1 .filtro .monto button,
-.filtros-1 .filtro .metros2 button {
+.filtros .filtro .monto button,
+.filtros .filtro .metros2 button {
   width: 20px;
   height: 100%;
   border: 0;
@@ -184,12 +256,12 @@ main {
   background: #fafafa;
   cursor: pointer;
 }
-.filtros-1 .filtro .monto button:hover,
-.filtros-1 .filtro .metros2 button:hover {
+.filtros .filtro .monto button:hover,
+.filtros .filtro .metros2 button:hover {
   background: #887c7c;
 }
 
-.filtros-1 .filtro input[type='number'] {
+.filtros .filtro input[type='number'] {
   height: 100%;
 
   width: 100px;
@@ -208,6 +280,7 @@ main {
 .baños .filtro label,
 .dormitorios .filtro label {
   display: flex;
+  align-items: center;
 }
 .baños .filtro label input,
 .dormitorios .filtro label input {
@@ -222,7 +295,7 @@ main {
   -o-border-radius: 50%;
 }
 @media (min-width: 850px) {
-  .filtros-1 .close {
+  .filtros .close {
     display: none;
   }
 }

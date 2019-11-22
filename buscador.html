@@ -117,7 +117,7 @@
     <!-- ================================================ -->
     <!-- ================= BODY=======================0 -->
     <main>
-      <div class="filtros-2">
+      <div class="opciones">
         <nav class="breadcrumbs">
           <ul>
             <li><a href="/">Inicio</a></li>
@@ -125,9 +125,15 @@
             <li>>Casa</li>
           </ul>
         </nav>
+        <div class="acciones">
+          <button class="activar-filtro" data-pushbar-target="left">
+            <i class="fas fa-sliders-h"></i>
+            Filtrar
+          </button>
+          <button class="ver-mapa"><i class="fas fa-map-marked-alt"></i>Ver Mapa</button>
+        </div>
 
         <div class="orden">
-          <div><button>Mas Filtros</button></div>
           <div class="total-busqueda">Hay 1500 Inmuebles</div>
           <select>
             <option value="">Ordenar Por</option>
@@ -388,8 +394,12 @@
       <!-- ============================= -->
 
       <!-- Filtros======== -->
-      <aside class="filtros-1" id="filtro" data-pushbar-id="left">
-        <span data-pushbar-close class="close push_left"></span>
+      <aside class="filtros" id="filtro" data-pushbar-id="left">
+        <div data-pushbar-close class="push_left">
+          Filtros
+          <span class="cerrar-filtros"></span>
+        </div>
+        <!-- <div class="espacio-blanco"></div> -->
         <!-- Tipo Operacion -->
         <div class="tipo-operacion">
           <div class="titulo">
@@ -588,6 +598,7 @@
           </div>
         </div>
         <!-- -------- -->
+        <div class="espacio-blanco"></div>
       </aside>
       <!-- ========= -->
     </main>
