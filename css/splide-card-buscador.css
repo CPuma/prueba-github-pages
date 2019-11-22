@@ -1,0 +1,206 @@
+.card {
+  position: relative;
+  min-height: 270px;
+  height: auto;
+  min-width: 301px;
+  width: 100%;
+  box-shadow: 0 8px 16px -8px rgba(68, 68, 68, 0.4);
+  margin-bottom: 1rem;
+  background: #fafafac7;
+  color: rgb(59, 65, 68);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.card .contactar-agente {
+  position: relative;
+
+  width: 100%;
+  height: 30px;
+  transition: all 0.1s;
+  border-radius: 6px;
+  background: #fafafa;
+
+  border: 0.5px solid rgb(4, 2, 105);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -ms-transition: all 0.1s;
+  -o-transition: all 0.1s;
+}
+
+.card .contactar-agente button {
+  appearance: none;
+  border: none;
+  background: none;
+  width: 100%;
+  height: 100%;
+  /* color: rgb(143, 9, 9); */
+  color: rgb(9, 3, 93);
+
+  line-height: 100%;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+.card .contactar-agente:hover {
+  background: rgba(56, 75, 243, 0.15);
+  /*   background: rgba(255, 5, 5, 0.028); */
+}
+
+.card .additional {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  transition: all 0.4s;
+  overflow: hidden;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.card .general {
+  position: relative;
+  height: 90px;
+  width: 100%;
+  /* bottom: 30px; */
+  /* background: #fafafad7; */
+  box-sizing: border-box;
+  padding: 0.25em 0.7em;
+  display: flex;
+  flex-direction: column;
+}
+.card .general h1 {
+  font-size: 1.2em;
+}
+/* === INFOR GENERAL===  */
+
+.precio-card {
+  position: absolute;
+  text-align: end;
+  top: 0.4rem;
+  right: 0.7rem;
+}
+.precio-card .soles {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+.precio-card .dolares {
+  font-size: 0.8rem;
+}
+.precio-card .otros {
+  font-size: 0.7rem;
+}
+
+.card .general .direccion {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  display: block;
+  font-size: 0.75em;
+  bottom: 0.5rem;
+}
+.card .general .direccion i {
+  width: 0.7em;
+  font-size: 0.9rem;
+  color: #706d6d;
+}
+
+.card .general .more {
+  width: 130px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.card .general .more p.m2 {
+  position: relative;
+  left: -8px;
+}
+
+.card .general .more p {
+  font-size: 1rem;
+  /* font-weight: 800; */
+}
+
+.card .general .more .fas {
+  width: 0.7em;
+  padding-left: 0.2em;
+  /* font-size: .8rem; */
+
+  color: #706d6d;
+}
+
+.card .general .more .fas sup {
+  font-size: 0.5em;
+}
+
+/* ====ADICIONAL O IMAGENES ===== */
+
+.card .additional .img-propiedad {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+/* ======= SPLIDE PUROOOO==========*/
+.splide {
+  width: 100%;
+  height: 100%;
+}
+.splide__track {
+  width: 100%;
+  height: 100%;
+}
+.splide__list {
+  width: 100%;
+  height: 100%;
+}
+.splide__slide {
+  width: 100%;
+  height: 160px;
+}
+.splide__slide img {
+  height: auto;
+  position: absolute;
+  bottom: -15%;
+  width: 100%;
+  object-fit: cover;
+
+  transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+}
+.splide__slide img:hover {
+  width: 110%;
+  translate: -5%;
+}
+.splide__arrow--prev {
+  left: 0;
+}
+.splide__arrow--next {
+  right: 0;
+}
+.splide__arrow {
+  appearance: none;
+  background: none;
+}
+.splide__arrow svg {
+  fill: rgb(184, 181, 181);
+}
+.splide:hover .splide__arrow svg {
+  fill: rgb(255, 255, 255);
+}

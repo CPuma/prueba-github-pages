@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet" r />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+
+    <!-- PUSHBAR CSS-->
+    <link rel="stylesheet" href="assets/libraries/pushbar/pushbar.css" />
+
+    <!-- SPLIDE  -->
+    <link rel="stylesheet" href="assets/libraries/splide/splide.min.css" />
+    <link rel="stylesheet" href="css/splide-card-buscador.css" />
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/remax.css" />
+    <link rel="stylesheet" href="css/header-footer.css" />
+    <link rel="stylesheet" href="css/buscador-main.css" />
+  </head>
+
+  <body>
+    <!-- =========  HEADER  ======== -->
+
+    <header>
+      <div id="navbar-top" class="navbar-top">
+        <!-- completar cuando sea pantalla mas grande -->
+        <div class="info">
+          <span class=""><i class="fas fa-phone-alt"></i>(01) 595 8881</span>
+          <span class=""
+            ><i class="fas fa-envelope"></i
+            ><a rel="nofollow" href="mailto:informes@remaxmetropolis.com">informes@remaxmetropolis.com</a>
+          </span>
+          <div class="nav-social">
+            <a href="#" rel="nofollow" title="Siguenos en Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" rel="nofollow" title="Siguenos en Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" rel="nofollow" title="Siguenos en Youtube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-main ">
+        <div class="logo logo-remax">
+          <h1 id="remax">
+            RE<span class="content-slash"
+              ><span class="border-slash"><span class="slash"></span></span> </span
+            >MAX
+          </h1>
+          <h2 id="metropolis">Metrópolis</h2>
+        </div>
+        <!-- ============================ -->
+        <!-- ============ MENU ============ -->
+        <nav class="nav-menu">
+          <div class="menu-xl">
+            <ul>
+              <li>Venta</li>
+              <li>Alquiler</li>
+              <!-- <li>Asesores</li> -->
+              <li>Sé un Asesor</li>
+              <!-- <li>BLOG</li> -->
+              <li>Valua tu Inmueble</li>
+            </ul>
+          </div>
+          <div data-pushbar-target="right" class="menu-hamburguesa">
+            <i class="menu-icon fas fa-bars"></i>
+          </div>
+          <div data-pushbar-id="right" class="pushbar from_right">
+            <span data-pushbar-close class="close push_right"></span>
+            <!-- ==== REMAX MENU TITULO ===== -->
+            <!-- <div class="title"><span>REMAX <br>Metropolis</span></div> -->
+
+            <h2 class="logo-remax title">
+              <span id="remax"
+                >RE<span class="content-slash"
+                  ><span class="border-slash"><span class="slash"></span></span> </span
+                >MAX</span
+              >
+              <span id="metropolis">Metrópolis</span>
+            </h2>
+            <!-- ============================ -->
+
+            <ul class="menu">
+              <li>Venta</li>
+              <li>Alquiler</li>
+              <li>Asesores</li>
+              <li>Se Asesor Remax</li>
+              <li>BLOG</li>
+              <li>Valua tu Inmueble</li>
+            </ul>
+            <div class="h-sociales">
+              <div class="f-social-networks">
+                <a href="#" rel="nofollow" title="Siguenos en Facebook" class=" fab fa-facebook"></a>
+                <a href="#" rel="nofollow" title="Siguenos en Instagram" class=" fab fa-instagram"></a>
+                <a href="#" rel="nofollow" title="Siguenos en Youtube" class=" fab fa-youtube"></a>
+              </div>
+              <div class="f-contacto flex-center">
+                <span class=""><i class="fas fa-phone-alt"></i>(01) 595 8881</span>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- ============================ -->
+      </div>
+    </header>
+
+    <!-- ================================================ -->
+    <!-- ================= BODY=======================0 -->
+    <main>
+      <div class="filtros-2">
+        <nav class="breadcrumbs">
+          <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="#">>Alquiler</a></li>
+            <li>>Casa</li>
+          </ul>
+        </nav>
+
+        <div class="orden">
+          <div><button>Mas Filtros</button></div>
+          <div class="total-busqueda">Hay 1500 Inmuebles</div>
+          <select>
+            <option value="">Ordenar Por</option>
+            <option value="/buscar/alquiler-de-casas">Relevancia</option>
+            <option value="/buscar/alquiler-de-casas?sort=publicationDate_desc">Último Publicado</option>
+            <option value="/buscar/alquiler-de-casas?sort=publicationDate_asc">Más antiguo</option>
+            <option value="/buscar/alquiler-de-casas?sort=priceAmount_desc">Mayor Precio</option>
+            <option value="/buscar/alquiler-de-casas?sort=priceAmount_asc">Menor Precio</option>
+          </select>
+        </div>
+      </div>
+
+      <section class="propiedades">
+        <!--  =========== CARD ============ -->
+        <div class="card">
+          <!-- adicionales -->
+          <div class="additional">
+            <div class="img-propiedad">
+              <div id="inmueble1" class="splide inmueble_splide">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <img src="img/propiedades/casa1.jpg" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/propiedades/casa2.jpg" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/propiedades/casa3.jpeg" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- INFORMACION GENERAL --- SIN hover -->
+          <div class="general">
+            <h1>Casa</h1>
+            <div class="precio-card">
+              <p class="soles">S/ 1,900,000</p>
+              <p class="dolares">(USD 600)</p>
+              <p class="otros">+ S/250 Mantenimiento</p>
+            </div>
+            <div class="direccion">
+              <p>
+                <span><i class="fas fa-map-marker-alt"></i> </span>Jr 8 de Octubre , Villa Maria del Triunfo
+              </p>
+              <!-- <p class="card-distrito">Villa MAria del Triunfo</p> -->
+            </div>
+            <div class="more">
+              <p>3<i class="fas fa-bed"></i></p>
+              <p>2<i class="fas fa-toilet"></i></p>
+              <p class="m2">
+                60<span class="fas">m<sup>2</sup></span>
+              </p>
+            </div>
+          </div>
+          <div class="contactar-agente">
+            <button>Contacta al Vendedor</button>
+          </div>
+        </div>
+        <div class="card">
+          <!-- adicionales -->
+          <div class="additional">
+            <div class="img-propiedad">
+              <div id="inmueble2" class="splide inmueble_splide">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <img src="img/propiedades/casa1.jpg" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/propiedades/casa2.jpg" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/propiedades/casa3.jpeg" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- INFORMACION GENERAL --- SIN hover -->
+          <div class="general">
+            <h1>Casa</h1>
+            <div class="precio-card">
+              <p class="soles">S/ 1,900,000</p>
+              <p class="dolares">(USD 600)</p>
+              <p class="otros">+ S/250 Mantenimiento</p>
+            </div>
+            <div class="direccion">
+              <p>
+                <span><i class="fas fa-map-marker-alt"></i> </span>Jr 8 de Octubre , Villa Maria del Triunfo
+              </p>
+              <!-- <p class="card-distrito">Villa MAria del Triunfo</p> -->
+            </div>
+            <div class="more">
+              <p>3<i class="fas fa-bed"></i></p>
+              <p>2<i class="fas fa-toilet"></i></p>
+              <p class="m2">
+                60<span class="fas">m<sup>2</sup></span>
+              </p>
+            </div>
+          </div>
+          <div class="contactar-agente">
+            <button>Contacta al Vendedor</button>
+          </div>
+        </div>
+        <div class="card">
+          <!-- adicionales -->
+          <div class="additional">
+            <div class="img-propiedad">
+              <div id="inmueble3" class="splide inmueble_splide">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <img src="img/propiedades/casa1.jpg" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/propiedades/casa2.jpg" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/propiedades/casa3.jpeg" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- INFORMACION GENERAL --- SIN hover -->
+          <div class="general">
+            <h1>Casa</h1>
+            <div class="precio-card">
+              <p class="soles">S/ 1,900,000</p>
+              <p class="dolares">(USD 600)</p>
+              <p class="otros">+ S/250 Mantenimiento</p>
+            </div>
+            <div class="direccion">
+              <p>
+                <span><i class="fas fa-map-marker-alt"></i> </span>Jr 8 de Octubre , Villa Maria del Triunfo
+              </p>
+              <!-- <p class="card-distrito">Villa MAria del Triunfo</p> -->
+            </div>
+            <div class="more">
+              <p>3<i class="fas fa-bed"></i></p>
+              <p>2<i class="fas fa-toilet"></i></p>
+              <p class="m2">
+                60<span class="fas">m<sup>2</sup></span>
+              </p>
+            </div>
+          </div>
+          <div class="contactar-agente">
+            <button>Contacta al Vendedor</button>
+          </div>
+        </div>
+        <div class="card">
+          <!-- adicionales -->
+          <div class="additional">
+            <div class="img-propiedad">
+              <div id="inmueble4" class="splide inmueble_splide">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <img src="img/propiedades/casa1.jpg" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/propiedades/casa2.jpg" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/propiedades/casa3.jpeg" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- INFORMACION GENERAL --- SIN hover -->
+          <div class="general">
+            <h1>Casa</h1>
+            <div class="precio-card">
+              <p class="soles">S/ 1,900,000</p>
+              <p class="dolares">(USD 600)</p>
+              <p class="otros">+ S/250 Mantenimiento</p>
+            </div>
+            <div class="direccion">
+              <p>
+                <span><i class="fas fa-map-marker-alt"></i> </span>Jr 8 de Octubre , Villa Maria del Triunfo
+              </p>
+              <!-- <p class="card-distrito">Villa MAria del Triunfo</p> -->
+            </div>
+            <div class="more">
+              <p>3<i class="fas fa-bed"></i></p>
+              <p>2<i class="fas fa-toilet"></i></p>
+              <p class="m2">
+                60<span class="fas">m<sup>2</sup></span>
+              </p>
+            </div>
+          </div>
+          <div class="contactar-agente">
+            <button>Contacta al Vendedor</button>
+          </div>
+        </div>
+        <div class="card">
+          <!-- adicionales -->
+          <div class="additional">
+            <div class="img-propiedad">
+              <div id="inmueble5" class="splide inmueble_splide">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <img src="img/propiedades/casa1.jpg" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/propiedades/casa2.jpg" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/propiedades/casa3.jpeg" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- INFORMACION GENERAL --- SIN hover -->
+          <div class="general">
+            <h1>Casa</h1>
+            <div class="precio-card">
+              <p class="soles">S/ 1,900,000</p>
+              <p class="dolares">(USD 600)</p>
+              <p class="otros">+ S/250 Mantenimiento</p>
+            </div>
+            <div class="direccion">
+              <p>
+                <span><i class="fas fa-map-marker-alt"></i> </span>Jr 8 de Octubre , Villa Maria del Triunfo
+              </p>
+              <!-- <p class="card-distrito">Villa MAria del Triunfo</p> -->
+            </div>
+            <div class="more">
+              <p>3<i class="fas fa-bed"></i></p>
+              <p>2<i class="fas fa-toilet"></i></p>
+              <p class="m2">
+                60<span class="fas">m<sup>2</sup></span>
+              </p>
+            </div>
+          </div>
+          <div class="contactar-agente">
+            <button>Contacta al Vendedor</button>
+          </div>
+        </div>
+        <!-- ======================================== -->
+      </section>
+
+      <!-- ============================= -->
+
+      <!-- Filtros======== -->
+      <aside class="filtros-1" id="filtro" data-pushbar-id="left">
+        <span data-pushbar-close class="close push_left"></span>
+        <!-- Tipo Operacion -->
+        <div class="tipo-operacion">
+          <div class="titulo">
+            <span>Tipo Operacion</span>
+          </div>
+          <div class="filtro">
+            <select name="s-tipo-operacion" id="">
+              <option value="Venta">Venta</option>
+              <option value="Alquiler">Alquiler</option>
+              <option value="Alquiler Temporal">Alquiler Temporal</option>
+            </select>
+          </div>
+        </div>
+        <!-- -------- -->
+        <!-- Tipo Propiedad -->
+        <div class="tipo-propiedad">
+          <div class="titulo">
+            <span>Tipo Propiedad </span>
+          </div>
+          <div class="filtro">
+            <select name="s-tipo-operacion" id="">
+              <option value="Venta">Casa</option>
+              <option value="Alquiler">terrero</option>
+              <option value="Alquiler Temporal">Local Comercial</option>
+              <option value="Alquiler Temporal">Departamento</option>
+              <option value="Alquiler Temporal">Oficina</option>
+            </select>
+          </div>
+        </div>
+        <!-- -------- -->
+        <!-- Departamento -->
+        <div class="departamento">
+          <div class="titulo">
+            <span>Departamento</span>
+          </div>
+          <div class="filtro">
+            <select name="s-departamento" id="">
+              <option value="Lima">Lima</option>
+              <option value="Ica">Ica</option>
+              <option value="Pucallpa">Pucallpa</option>
+            </select>
+          </div>
+        </div>
+        <!-- -------- -->
+        <!-- Provincia -->
+        <div class="provincia">
+          <div class="titulo">
+            <span>Provincia</span>
+          </div>
+          <div class="filtro">
+            <select name="s-provincia" id="">
+              <option value="Lima">Lima</option>
+              <option value="Ica">otro que no es lima</option>
+            </select>
+          </div>
+        </div>
+        <!-- -------- -->
+        <!-- Distrito -->
+        <div class="distrito">
+          <div class="titulo">
+            <span>Distrito</span>
+          </div>
+          <div class="filtro">
+            <select name="s-distrito" id="">
+              <option value="Surco">Surco</option>
+              <option value="Miraflores">Miraflores</option>
+              <option value="San juan de Miraflores">San juan de M.</option>
+              <option value="Villa Maria del Triunfo">Villa Maria del Triunfo</option>
+              <option value="San Borja">San Borja</option>
+              <option value="San Isidro">San Isidro</option>
+            </select>
+          </div>
+        </div>
+        <!-- -------- -->
+        <div class="distrito">
+          <div class="titulo">
+            <span>Distrito</span>
+          </div>
+          <div class="filtro">
+            <select name="s-distrito" id="">
+              <option value="Surco">Surco</option>
+              <option value="Miraflores">Miraflores</option>
+              <option value="San juan de Miraflores">San juan de M.</option>
+              <option value="Villa Maria del Triunfo">Villa Maria del Triunfo</option>
+              <option value="San Borja">San Borja</option>
+              <option value="San Isidro">San Isidro</option>
+            </select>
+          </div>
+        </div>
+        <!-- -------- -->
+        <!-- -----Precio--- -->
+        <div class="Precio">
+          <div class="titulo">
+            <span>Precio</span>
+          </div>
+          <div class="filtro">
+            <div class="tipo-moneda">
+              <label for="chMoneda1"
+                ><input
+                  type="checkbox"
+                  id="chMoneda1"
+                  value="soles"
+                  onclick="selectModeda(this.id)"
+                />soles</label
+              >
+              <label for="chMoneda2">
+                <input
+                  type="checkbox"
+                  id="chMoneda2"
+                  value="dolares"
+                  onclick="selectModeda(this.id)"
+                />dólares</label
+              >
+            </div>
+            <div class="monto">
+              <input type="number" id="min" placeholder="Desde" /><span>-</span>
+              <input type="number" id="max" placeholder="hasta" />
+              <button>></button>
+            </div>
+          </div>
+        </div>
+        <!-- -------- -->
+        <!-- -----Area Total m2--- -->
+        <div class="area-total">
+          <div class="titulo">
+            <span>Area Total (m2)</span>
+          </div>
+          <div class="filtro">
+            <div class="metros2">
+              <input type="number" id="desde" placeholder="Desde" /><span>-</span>
+              <input type="number" id="hasta" placeholder="hasta" />
+              <button>></button>
+            </div>
+          </div>
+        </div>
+        <!-- -------- -->
+        <!-- -----Baños--- -->
+        <div class="baños">
+          <div class="titulo">
+            <span>Baños</span>
+          </div>
+          <div class="filtro">
+            <label for="chBaño1"
+              ><input type="checkbox" id="chBaño1" value="1+" onclick="selectBaños(this.id)" />1</label
+            >
+            <label for="chBaño2">
+              <input type="checkbox" id="chBaño2" value="2" onclick="selectBaños(this.id)" />2</label
+            >
+            <label for="chBaño3">
+              <input type="checkbox" id="chBaño3" value="3" onclick="selectBaños(this.id)" />3</label
+            >
+            <label for="chBaño4">
+              <input type="checkbox" id="chBaño4" value="4+" onclick="selectBaños(this.id)" />4+</label
+            >
+          </div>
+        </div>
+        <!-- -------- -->
+        <!-- -----Dormitorios--- -->
+        <div class="dormitorios">
+          <div class="titulo">
+            <span>Dormitorios</span>
+          </div>
+          <div class="filtro">
+            <label for="chDormitorio1"
+              ><input
+                type="checkbox"
+                id="chDormitorio1"
+                value="1"
+                onclick="selectDormitorios(this.id)"
+              />1</label
+            >
+            <label for="chDormitorio2">
+              <input
+                type="checkbox"
+                id="chDormitorio2"
+                value="2"
+                onclick="selectDormitorios(this.id)"
+              />2</label
+            >
+            <label for="chDormitorio3">
+              <input
+                type="checkbox"
+                id="chDormitorio3"
+                value="3"
+                onclick="selectDormitorios(this.id)"
+              />3</label
+            >
+            <label for="chDormitorio4">
+              <input
+                type="checkbox"
+                id="chDormitorio4"
+                value="4+"
+                onclick="selectDormitorios(this.id)"
+              />4+</label
+            >
+          </div>
+        </div>
+        <!-- -------- -->
+      </aside>
+      <!-- ========= -->
+    </main>
+
+    <!-- =========  FOOTER  ======== -->
+
+    <footer>
+      <div class="footer-top">
+        <div class="f-social-networks">
+          <a href="#" rel="nofollow" title="Siguenos en Facebook" class=" fab fa-facebook"></a>
+          <a href="#" rel="nofollow" title="Siguenos en Instagram" class=" fab fa-instagram"></a>
+          <a href="#" rel="nofollow" title="Siguenos en Youtube" class="fab fa-youtube"></a>
+        </div>
+
+        <div class="f-contacto flex-center">
+          <span class=""><i class="fas fa-phone-alt"></i>(01) 595 8881</span>
+          <span class=""
+            ><i class="fas fa-envelope"></i
+            ><a rel="nofollow" href="mailto:informes@remaxmetropolis.com">informes@remaxmetropolis.com</a>
+          </span>
+
+          <span class="">
+            <i class="fas fa-map-marker-alt"></i>Av. Los Próceres S/N Cuadra 10 Mz. B Lt.23, Santiago de
+            Surco<br />Lima – Perú</span
+          >
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2020 RE/MAX Metropolis </span>
+        <br />by <a rel="sponsored" href="https://www.terk.pe">TERK </a>
+      </div>
+    </footer>
+
+    <!-- JQUERY -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
+    <!-- PUSHBAR JS -->
+    <script src="assets/libraries/pushbar/pushbar.js"></script>
+    <script type="text/javascript">
+      var pushbar = new Pushbar({
+        blur: true,
+        overlay: true
+      });
+    </script>
+
+    <!-- SPLIDE 1.2.0-- SLIDERSS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.2.0/dist/js/splide.min.js"></script> -->
+    <script src="assets/libraries/splide/splide.min.js"></script>
+    <script src="js/buscador.js"></script>
+  </body>
+</html>

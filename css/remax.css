@@ -23,12 +23,12 @@
 	display: inline-block;
 	flex-wrap: nowrap;
 	font-weight: 400;
-	letter-spacing: 0.05em;
+	letter-spacing: 0.03em;
 	font-size: 28px;
-
 	color: rgb(220, 28, 46);
 	font-style: normal;
 	white-space: nowrap;
+	padding-bottom: 3px;
 }
 #metropolis {
 	position: relative;
@@ -51,7 +51,7 @@
 
 	height: 1.38em;
 
-	left: -0.2em;
+	left: -0.1em;
 }
 
 .border-slash {

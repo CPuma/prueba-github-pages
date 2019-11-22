@@ -10,6 +10,7 @@
     <link
       href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap"
       rel="stylesheet"
+      r
     />
 
     <!-- FONT AWESOME -->
@@ -28,10 +29,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.2.0/dist/css/splide.min.css"
     /> -->
-    <link
-      rel="stylesheet"
-      href="assets/libraries/splide/splide.min.css"
-    />
+    <link rel="stylesheet" href="assets/libraries/splide/splide.min.css" />
     <link rel="stylesheet" href="css/splide-cards.css" />
 
     <!-- ESTILOS -->
@@ -45,12 +43,30 @@
     <!-- =========  HEADER  ======== -->
 
     <header>
-      <div class="navbar-top  hidden">
+      <div id="navbar-top" class="navbar-top">
         <!-- completar cuando sea pantalla mas grande -->
+        <div class="info">
+          <span class=""><i class="fas fa-phone-alt"></i>(01) 595 8881</span>
+          <span class=""
+            ><i class="fas fa-envelope"></i
+            ><a rel="nofollow" href="mailto:informes@remaxmetropolis.com"
+              >informes@remaxmetropolis.com</a
+            >
+          </span>
+          <div class="nav-social">
+            <a href="#" rel="nofollow" title="Siguenos en Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" rel="nofollow" title="Siguenos en Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" rel="nofollow" title="Siguenos en Youtube"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
       </div>
       <div class="navbar-main ">
-        <!-- =============  LOGO =============== -->
-        <!-- <div class="logo"><img class="logo-img" src="img/nav-bar-logo3.jpg" alt=""></div> -->
         <div class="logo logo-remax">
           <h1 id="remax">
             RE<span class="content-slash"
@@ -64,6 +80,19 @@
         <!-- ============================ -->
         <!-- ============ MENU ============ -->
         <nav class="nav-menu">
+          <div class="menu-xl">
+            <ul>
+              <li>Venta</li>
+              <li>Alquiler</li>
+              <!-- <li>Asesores</li> -->
+              <li>Sé un Asesor</li>
+              <!-- <li>BLOG</li> -->
+              <li>Valua tu Inmueble</li>
+            </ul>
+          </div>
+          <div data-pushbar-target="right" class="menu-hamburguesa">
+            <i class="menu-icon fas fa-bars"></i>
+          </div>
           <div data-pushbar-id="right" class="pushbar from_right">
             <span data-pushbar-close class="close push_right"></span>
             <!-- ==== REMAX MENU TITULO ===== -->
@@ -117,17 +146,13 @@
               </div>
             </div>
           </div>
-          <div data-pushbar-target="right" class="menu-hamburguesa">
-            <i class="menu-icon fas fa-bars"></i>
-          </div>
         </nav>
         <!-- ============================ -->
       </div>
     </header>
 
     <!-- =========  BODY  ======== -->
-    <main class="home" title="Remax Metropolis"> 
-
+    <main class="home" title="Remax Metropolis">
       <section class="portada">
         <div class="frase">
           <h2>Encuentra la casa de tus sueños</h2>
@@ -168,7 +193,7 @@
         </div>
         <div class="cards-container container">
           <div id="card-slider" class="splide">
-            <article class="splide__track">
+            <div class="splide__track">
               <ul class="splide__list">
                 <li class="splide__slide">
                   <article class="card">
@@ -180,14 +205,7 @@
                       <div class="card_destacado">
                         <p>Frente al Mar</p>
                       </div>
-                      <div class="card_caracteristicas">
-                        <p>3<i class="fas fa-bed"></i></p>
-                        <p>2<i class="fas fa-toilet"></i></p>
 
-                        <p>
-                          60<span class="fas">m<sup>2</sup></span>
-                        </p>
-                      </div>
                       <div class="card_tipo_propiedad">
                         <p>
                           Casa
@@ -209,16 +227,12 @@
                         </div>
                         <p class="card_distrito"></p>
                       </div>
-                      <div class="card_descripcion_agente">
-                        <img src="img/agentes/agente-1.jpg" alt="" />
+                      <div class="card_caracteristicas">
+                        <p>3<i class="fas fa-bed"></i></p>
+                        <p>2<i class="fas fa-toilet"></i></p>
 
                         <p>
-                          Maria Lopez
-                        </p>
-                        <p>
-                          <span>
-                            998885478
-                          </span>
+                          60<span class="fas">m<sup>2</sup></span>
                         </p>
                       </div>
                     </div>
@@ -268,7 +282,7 @@
                         <img src="img/agentes/agente-1.jpg" alt="" />
 
                         <p>
-                          Katiuska peperosoni
+                          Katiuska Perez
                         </p>
                         <p>
                           <span>
@@ -441,60 +455,6 @@
                     </div>
                   </article>
                 </li>
-                <li class="splide__slide">
-                  <article class="card">
-                    <div class="card_img">
-                      <img
-                        src="https://splidejs.com/wp-content/uploads/2019/08/t02.jpg"
-                        alt=""
-                      />
-                      <div class="card_destacado">
-                        <p>Frente al Mar</p>
-                      </div>
-                      <div class="card_caracteristicas">
-                        <p>3<i class="fas fa-bed"></i></p>
-                        <p>2<i class="fas fa-toilet"></i></p>
-
-                        <p>
-                          60<span class="fas">m<sup>2</sup></span>
-                        </p>
-                      </div>
-                      <div class="card_tipo_propiedad">
-                        <p>
-                          Casa
-                        </p>
-                      </div>
-                    </div>
-                    <div class="card_descripcion">
-                      <div class="card_descripcion_propiedad">
-                        <p class="card_precio">
-                          <span class="tipo_moneda">US$</span>5,000 000
-                        </p>
-                        <div class="card_direccion">
-                          <p>
-                            San juan de Miraflores
-                          </p>
-                          <p>
-                            Lima
-                          </p>
-                        </div>
-                        <p class="card_distrito"></p>
-                      </div>
-                      <div class="card_descripcion_agente">
-                        <img src="img/agentes/agente-1.jpg" alt="" />
-
-                        <p>
-                          Maria Lopez
-                        </p>
-                        <p>
-                          <span>
-                            998885478
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                  </>
-                </li>
               </ul>
             </div>
           </div>
@@ -502,43 +462,44 @@
       </section>
 
       <section class="valuaciones">
-
-          <div class="gratis"><span>GRATIS</span></div>
+        <div class="gratis"><span>GRATIS</span></div>
         <div class=" container">
-
           <!-- <h3 >Valuaciones</h3> -->
-          <h3>Quieres saber cuanto vale tu casa  o departamento ?</h3>   
-          <p>Contamos con una base de datos y un algoritmo de alto desempeño que te ayudara a conocer el precio promedio de tu propiedad , segun sus caracteristicas y la zona en la que se encuentra.</p>
+          <h3>Quieres saber cuanto vale tu casa o departamento ?</h3>
+          <p>
+            Contamos con una base de datos y un algoritmo de alto desempeño que
+            te ayudara a conocer el precio promedio de tu propiedad , segun sus
+            caracteristicas y la zona en la que se encuentra.
+          </p>
           <button>Valua tu Propiedad</button>
         </div>
       </section>
       <!-- <section class="nuestros-asesores"></section> -->
-      <section class="se-un-asesor">
+      <div class="se-un-asesor">
         <div class="container"></div>
-      </section>
+      </div>
       <!-- <section class="ultimas-noticias"></section>
       <section class="blog"></section> -->
       <section class="contactanos"></section>
       <section class="como-llegar"></section>
-    </main> 
+    </main>
 
     <!-- =========  FOOTER  ======== -->
+    <div class="f-license-remax">
+      <span>"Cada oficina es de propiedad y operación independiente"</span>
+      <a rel="nofollow" href="https://www.remax.pe"
+        ><i>RE<span>/</span>MAX</i> Perú</a
+      >
+    </div>
     <footer>
       <div class="footer-top">
-        <div class="f-license-remax">
-          <span>"Cada oficina es de propiedad y operación independiente"</span>
-          <a rel="nofollow" href="https://www.remax.pe"
-            ><i>RE<span>/</span>MAX</i> Perú</a
-          >
-        </div>
-
         <div class="f-social-networks">
           <a
             href="#"
             rel="nofollow"
             title="Siguenos en Facebook"
             class=" fab fa-facebook"
-          ></article>
+          ></a>
           <a
             href="#"
             rel="nofollow"
@@ -590,6 +551,6 @@
     <script src="assets/libraries/splide/splide.min.js"></script>
     <script src="js/splide_home.js"></script>
 
-    <!-- <script src="js/remax.js"></script> -->
+    <script src="js/main.js"></script>
   </body>
 </html>

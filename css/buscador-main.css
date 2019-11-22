@@ -1,0 +1,228 @@
+main {
+  margin: 70px auto 50px auto;
+  /* margin-top: 60px; */
+  width: 98%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px minmax(600px, auto);
+  grid-template-areas:
+    'filtros-2 '
+    ' propiedades';
+  justify-content: center;
+}
+@media (min-width: 850px) {
+  main {
+    margin-top: 100px;
+    grid-template-columns: 270px 3fr;
+    grid-template-rows: 60px minmax(500px, auto) auto;
+    grid-template-areas:
+      'filtros-2 filtros-2 '
+      'filtros-1 propiedades '
+      'nulo propiedades ';
+  }
+}
+
+.filtros-2 {
+  grid-area: filtros-2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  /* background: 0 gray; */
+  font-size: 0.8rem;
+}
+.filtros-1 {
+  grid-area: filtros-1;
+  display: flex;
+  flex-direction: column;
+
+  background: #d1d0d0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.propiedades {
+  grid-area: propiedades;
+  width: 100%;
+
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr;
+  box-sizing: border-box;
+  row-gap: 1rem;
+  column-gap: 1rem;
+
+  justify-content: center;
+  align-items: flex-start;
+}
+@media (min-width: 670px) {
+  .propiedades {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fill, minmax(270px, 1fr));
+  }
+}
+@media (min-width: 850px) {
+  .propiedades {
+    padding-left: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fill, minmax(270px, 1fr));
+  }
+  .card {
+    /* width: 98%; */
+  }
+}
+@media (min-width: 950px) {
+  .propiedades {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+/* ======== FILTROS  2=============*/
+.filtros-2 .orden {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.filtros-2 .breadcrumbs ul li {
+  display: inline-block;
+  padding-right: 0.3em;
+}
+.filtros-2 .breadcrumbs {
+  display: none;
+}
+
+@media (min-width: 850px) {
+  .filtros-2 .breadcrumbs {
+    display: block;
+  }
+  .filtros-2 .orden {
+    width: 300px;
+  }
+}
+
+/* --------- */
+/* =========== FILTROS 1================= */
+
+.filtros-1 {
+  /* position: relative; */
+  font-size: 0.85rem;
+  display: flex;
+  left: 0;
+  top: 0;
+  /* display: none;  */
+}
+
+.filtros-1 > div {
+  position: relative;
+  margin: 1.5rem 0.8rem;
+  margin-bottom: 0.5rem;
+  padding-top: 0.8rem;
+}
+.filtros-1 .titulo {
+  position: absolute;
+  top: -0.7rem;
+}
+.filtros-1 .filtro {
+  position: relative;
+  width: 100%;
+}
+.filtros-1 .filtro select {
+  position: relative;
+  width: 100%;
+  height: 2.2rem;
+  border: none;
+}
+.filtros-1 .filtro select option {
+  border: none;
+  box-shadow: none;
+}
+.filtros-1 .filtro .tipo-moneda {
+  width: 100%;
+  margin-bottom: 0.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.filtros-1 .filtro .tipo-moneda label {
+  display: flex;
+}
+.filtros-1 .filtro .tipo-moneda input {
+  margin-right: 0.3rem;
+}
+
+.filtros-1 .filtro .monto,
+.filtros-1 .filtro .metros2 {
+  height: 2.2rem;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filtros-1 .filtro .monto span,
+.filtros-1 .filtro .metros2 span {
+  padding: 0 0.4em;
+}
+.filtros-1 .filtro .monto button,
+.filtros-1 .filtro .metros2 button {
+  width: 20px;
+  height: 100%;
+  border: 0;
+  margin: 0 0 0 0.4em;
+  font-size: 0.7em;
+  background: #fafafa;
+  cursor: pointer;
+}
+.filtros-1 .filtro .monto button:hover,
+.filtros-1 .filtro .metros2 button:hover {
+  background: #887c7c;
+}
+
+.filtros-1 .filtro input[type='number'] {
+  height: 100%;
+
+  width: 100px;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  text-indent: 0.5rem;
+  border: none;
+}
+
+.baños .filtro,
+.dormitorios .filtro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.baños .filtro label,
+.dormitorios .filtro label {
+  display: flex;
+}
+.baños .filtro label input,
+.dormitorios .filtro label input {
+  display: flex;
+}
+.filtro input[type='checkbox'] {
+  margin-right: 0.4rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+@media (min-width: 850px) {
+  .filtros-1 .close {
+    display: none;
+  }
+}
