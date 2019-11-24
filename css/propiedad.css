@@ -1,0 +1,370 @@
+main {
+  margin: 62px auto 20px auto;
+
+  width: 98%;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(300px, 50vh) 110px 110px auto auto 350px auto 430px;
+  grid-template-areas:
+    'fotos'
+    'info-principal'
+    'precio'
+    'info-complementaria'
+    'descripcion'
+    'ubicacion'
+    'contactar-agente'
+    'propiedades-similares';
+}
+@media (min-width: 850px) {
+  main {
+    margin: 95px auto 20px auto;
+  }
+}
+@media (min-width: 675px) {
+  main {
+    grid-template-columns: auto minmax(250px, 38%);
+    grid-template-rows: 450px 110px repeat(4, minmax(200px, auto));
+    grid-template-areas:
+      'fotos fotos'
+      'info-principal precio'
+      'info-complementaria contactar-agente'
+      'descripcion contactar-agente'
+      'ubicacion contactar-agente'
+      'propiedades-similares  propiedades-similares';
+  }
+}
+
+/* =================== FOTOS ======================== */
+.fotos {
+  grid-area: fotos;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(300px, 100%);
+  grid-template-areas: 'splide-principal';
+  /* grid-template-rows: 300px 100px;
+  grid-template-areas: 'splide-principal' 'splide-secundario'; */
+}
+.splide-principal {
+  grid-area: splide-principal;
+  background: red;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.splide-secundario {
+  display: none;
+  grid-area: splide-secundario;
+  background: yellow;
+  position: relative;
+  width: 100%;
+}
+@media (min-width: 675px) {
+  .fotos {
+    grid-template-columns: minmax(150px, 20%) auto;
+    /* grid-template-columns: minmax(100px, 250px) auto; */
+    grid-template-rows: 450px;
+    grid-template-areas: 'splide-secundario splide-principal';
+  }
+  .splide-secundario {
+    display: unset;
+  }
+}
+
+/* .splide-principal .splide {
+  position: absolute;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+.splide-principal .splide__track {
+  position: relative;
+  width: 98%;
+  height: 100%;
+}
+.splide-principal .splide__list {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.splide-principal .splide__slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.splide-principal .splide__slide img {
+  height: auto;
+  position: relative;
+   bottom: -15%; 
+  width: 100%;
+  object-fit: cover;
+
+  transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+}
+
+.splide-principal .splide__arrow--prev {
+  left: 0;
+}
+.splide-principal .splide__arrow--next {
+  right: 0;
+}
+.splide-principal .splide__arrow {
+  z-index: 1000;
+  /* appearance: none;
+  background: none; 
+}
+.splide-principal .splide__arrow svg {
+  fill: rgb(184, 181, 181);
+}
+.splide-principal .splide:hover .splide__arrow svg {
+  fill: rgb(255, 255, 255);
+} */
+
+/* ============ Info PRINCIPAL =================== */
+.info-principal {
+  padding: 1rem 0.7rem 0.5rem 1rem;
+  grid-area: info-principal;
+  /* background: rgb(240, 137, 137); */
+  background: #fafafa;
+  display: grid;
+  grid-template-columns: auto 60px;
+  grid-template-rows: 30px auto;
+  grid-template-areas: 'titulo caracteristicas' 'direccion caracteristicas';
+}
+.info-principal h1 {
+  grid-area: titulo;
+  font-size: 1rem;
+}
+.info-principal .direccion {
+  grid-area: direccion;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.info-principal .caracteristicas {
+  grid-area: caracteristicas;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  font-size: 1.2em;
+  padding-right: 0.5rem;
+  color: #616060;
+}
+.info-principal .caracteristicas span {
+  width: 1rem;
+  margin-left: 0.3rem;
+}
+
+/* ========= PRECIO ====================0 */
+.precio {
+  grid-area: precio;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  background: rgb(88, 88, 88);
+  color: white;
+}
+.precio .soles {
+  font-size: 1.3rem;
+}
+.precio .dolares {
+  font-size: 1rem;
+}
+.precio .otros {
+  font-size: 0.7rem;
+}
+/* =============== Info- COMPLEMENTARIA ========== */
+.info-complementaria {
+  grid-area: info-complementaria;
+  padding: 1rem 1rem 1rem 1.5rem;
+  height: fit-content;
+  background: #e0dbdbdc;
+}
+.info-complementaria ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 2rem;
+  width: 100%;
+  font-size: 0.9rem;
+  color: rgb(88, 86, 86);
+  word-wrap: break-word;
+}
+.info-complementaria ul li > span {
+  display: block;
+  width: 120px;
+  font-size: 0.75rem;
+  color: rgb(117, 116, 116);
+}
+.info-complementaria ul li > i {
+  display: block;
+  width: calc(100%-120px);
+  font-size: 0.85rem;
+  color: #1f1e1e;
+  font-style: normal;
+}
+
+/* ======= DESCRIPCION ========= */
+.descripcion {
+  grid-area: descripcion;
+  background: #fafafa;
+  padding: 1.5rem;
+}
+.descripcion p {
+  text-align: justify;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  text-transform: lowercase;
+}
+
+/* ======= UBICACION ======== */
+.ubicacion {
+  grid-area: ubicacion;
+  background: red;
+}
+
+/* ======== CONTACTAR AGENTE ========= */
+.contactar-agente {
+  grid-area: contactar-agente;
+  margin: 2rem 0;
+  padding: 1rem;
+  background: rgb(43, 43, 207);
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 150px 40px 120px 65px;
+  grid-template-areas: 'foto-agente' 'sociales-agente' 'info-agente' 'opciones ';
+}
+/* ----- */
+.foto-agente {
+  grid-area: foto-agente;
+  display: flex;
+  justify-content: center;
+}
+.foto-agente img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* ------| */
+.info-agente {
+  grid-area: info-agente;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem;
+  font-size: 0.9rem;
+  color: white;
+}
+.info-agente .nombre-agente {
+  font-size: 1.5rem;
+}
+
+/* ------- */
+.sociales-agente {
+  grid-area: sociales-agente;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  background: #090080b2;
+}
+.sociales-agente a {
+  font-size: 1.2rem;
+  color: #fafafa;
+}
+
+/* -------- */
+.opciones {
+  position: relative;
+  grid-area: opciones;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.opciones a {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  cursor: pointer;
+  background: #fafafae3;
+}
+.opciones a:hover {
+  background: #fafafa;
+}
+
+@media (min-width: 500px) {
+  .contactar-agente {
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas: 'foto-agente info-agente' 'sociales-agente opciones';
+  }
+}
+@media (min-width: 850px) {
+  .contactar-agente {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr 3fr 2fr;
+    grid-template-areas: 'foto-agente' 'sociales-agente' 'info-agente' 'opciones';
+  }
+}
+
+/* ======== PROPIEDADES SIMILARES ===== */
+
+.propiedades-similares {
+  margin: 1rem;
+
+  position: relative;
+  grid-area: propiedades-similares;
+}
+.propiedades-similares .cabecera {
+  position: absolute;
+  height: 30px;
+  width: 100%;
+  padding: 0 1rem;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.propiedades-similares .cabecera h4 {
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+.propiedades-similares .cabecera span {
+  font-size: 0.8rem;
+  font-weight: 100;
+  color: #4d4be7;
+}
+
+.propiedades-similares .cards-container {
+  /* margin: 1rem 0; */
+  position: absolute;
+  width: 100%;
+  height: 350;
+  bottom: 0;
+}
+.propiedades-similares .cards-container .splide {
+  margin-bottom: 0;
+}

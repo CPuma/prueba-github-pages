@@ -394,211 +394,212 @@
       <!-- ============================= -->
 
       <!-- Filtros======== -->
-      <aside class="filtros" id="filtro" data-pushbar-id="left">
-        <div data-pushbar-close class="push_left">
-          Filtros
-          <span class="cerrar-filtros"></span>
-        </div>
-        <!-- <div class="espacio-blanco"></div> -->
-        <!-- Tipo Operacion -->
-        <div class="tipo-operacion">
-          <div class="titulo">
-            <span>Tipo Operacion</span>
+      <aside class="contenedor-filtros">
+        <div class="filtros" id="filtro" data-pushbar-id="left">
+          <div data-pushbar-close class="push_left">
+            Filtros
+            <span class="cerrar-filtros"></span>
           </div>
-          <div class="filtro">
-            <select name="s-tipo-operacion" id="">
-              <option value="Venta">Venta</option>
-              <option value="Alquiler">Alquiler</option>
-              <option value="Alquiler Temporal">Alquiler Temporal</option>
-            </select>
+          <!-- <div class="espacio-blanco"></div> -->
+          <!-- Tipo Operacion -->
+          <div class="tipo-operacion">
+            <div class="titulo">
+              <span>Tipo Operacion</span>
+            </div>
+            <div class="filtro">
+              <select name="s-tipo-operacion" id="">
+                <option value="Venta">Venta</option>
+                <option value="Alquiler">Alquiler</option>
+                <option value="Alquiler Temporal">Alquiler Temporal</option>
+              </select>
+            </div>
           </div>
-        </div>
-        <!-- -------- -->
-        <!-- Tipo Propiedad -->
-        <div class="tipo-propiedad">
-          <div class="titulo">
-            <span>Tipo Propiedad </span>
+          <!-- -------- -->
+          <!-- Tipo Propiedad -->
+          <div class="tipo-propiedad">
+            <div class="titulo">
+              <span>Tipo Propiedad </span>
+            </div>
+            <div class="filtro">
+              <select name="s-tipo-operacion" id="">
+                <option value="Venta">Casa</option>
+                <option value="Alquiler">terrero</option>
+                <option value="Alquiler Temporal">Local Comercial</option>
+                <option value="Alquiler Temporal">Departamento</option>
+                <option value="Alquiler Temporal">Oficina</option>
+              </select>
+            </div>
           </div>
-          <div class="filtro">
-            <select name="s-tipo-operacion" id="">
-              <option value="Venta">Casa</option>
-              <option value="Alquiler">terrero</option>
-              <option value="Alquiler Temporal">Local Comercial</option>
-              <option value="Alquiler Temporal">Departamento</option>
-              <option value="Alquiler Temporal">Oficina</option>
-            </select>
+          <!-- -------- -->
+          <!-- Departamento -->
+          <div class="departamento">
+            <div class="titulo">
+              <span>Departamento</span>
+            </div>
+            <div class="filtro">
+              <select name="s-departamento" id="">
+                <option value="Lima">Lima</option>
+                <option value="Ica">Ica</option>
+                <option value="Pucallpa">Pucallpa</option>
+              </select>
+            </div>
           </div>
-        </div>
-        <!-- -------- -->
-        <!-- Departamento -->
-        <div class="departamento">
-          <div class="titulo">
-            <span>Departamento</span>
+          <!-- -------- -->
+          <!-- Provincia -->
+          <div class="provincia">
+            <div class="titulo">
+              <span>Provincia</span>
+            </div>
+            <div class="filtro">
+              <select name="s-provincia" id="">
+                <option value="Lima">Lima</option>
+                <option value="Ica">otro que no es lima</option>
+              </select>
+            </div>
           </div>
-          <div class="filtro">
-            <select name="s-departamento" id="">
-              <option value="Lima">Lima</option>
-              <option value="Ica">Ica</option>
-              <option value="Pucallpa">Pucallpa</option>
-            </select>
+          <!-- -------- -->
+          <!-- Distrito -->
+          <div class="distrito">
+            <div class="titulo">
+              <span>Distrito</span>
+            </div>
+            <div class="filtro">
+              <select name="s-distrito" id="">
+                <option value="Surco">Surco</option>
+                <option value="Miraflores">Miraflores</option>
+                <option value="San juan de Miraflores">San juan de M.</option>
+                <option value="Villa Maria del Triunfo">Villa Maria del Triunfo</option>
+                <option value="San Borja">San Borja</option>
+                <option value="San Isidro">San Isidro</option>
+              </select>
+            </div>
           </div>
-        </div>
-        <!-- -------- -->
-        <!-- Provincia -->
-        <div class="provincia">
-          <div class="titulo">
-            <span>Provincia</span>
+          <!-- -------- -->
+          <div class="distrito">
+            <div class="titulo">
+              <span>Distrito</span>
+            </div>
+            <div class="filtro">
+              <select name="s-distrito" id="">
+                <option value="Surco">Surco</option>
+                <option value="Miraflores">Miraflores</option>
+                <option value="San juan de Miraflores">San juan de M.</option>
+                <option value="Villa Maria del Triunfo">Villa Maria del Triunfo</option>
+                <option value="San Borja">San Borja</option>
+                <option value="San Isidro">San Isidro</option>
+              </select>
+            </div>
           </div>
-          <div class="filtro">
-            <select name="s-provincia" id="">
-              <option value="Lima">Lima</option>
-              <option value="Ica">otro que no es lima</option>
-            </select>
+          <!-- -------- -->
+          <!-- -----Precio--- -->
+          <div class="Precio">
+            <div class="titulo">
+              <span>Precio</span>
+            </div>
+            <div class="filtro">
+              <div class="tipo-moneda">
+                <label for="chMoneda1"
+                  ><input
+                    type="checkbox"
+                    id="chMoneda1"
+                    value="soles"
+                    onclick="selectModeda(this.id)"
+                  />soles</label
+                >
+                <label for="chMoneda2">
+                  <input
+                    type="checkbox"
+                    id="chMoneda2"
+                    value="dolares"
+                    onclick="selectModeda(this.id)"
+                  />dólares</label
+                >
+              </div>
+              <div class="monto">
+                <input type="number" id="min" placeholder="Desde" /><span>-</span>
+                <input type="number" id="max" placeholder="hasta" />
+                <button>></button>
+              </div>
+            </div>
           </div>
-        </div>
-        <!-- -------- -->
-        <!-- Distrito -->
-        <div class="distrito">
-          <div class="titulo">
-            <span>Distrito</span>
+          <!-- -------- -->
+          <!-- -----Area Total m2--- -->
+          <div class="area-total">
+            <div class="titulo">
+              <span>Area Total (m2)</span>
+            </div>
+            <div class="filtro">
+              <div class="metros2">
+                <input type="number" id="desde" placeholder="Desde" /><span>-</span>
+                <input type="number" id="hasta" placeholder="hasta" />
+                <button>></button>
+              </div>
+            </div>
           </div>
-          <div class="filtro">
-            <select name="s-distrito" id="">
-              <option value="Surco">Surco</option>
-              <option value="Miraflores">Miraflores</option>
-              <option value="San juan de Miraflores">San juan de M.</option>
-              <option value="Villa Maria del Triunfo">Villa Maria del Triunfo</option>
-              <option value="San Borja">San Borja</option>
-              <option value="San Isidro">San Isidro</option>
-            </select>
+          <!-- -------- -->
+          <!-- -----Baños--- -->
+          <div class="baños">
+            <div class="titulo">
+              <span>Baños</span>
+            </div>
+            <div class="filtro">
+              <label for="chBaño1"
+                ><input type="checkbox" id="chBaño1" value="1+" onclick="selectBaños(this.id)" />1</label
+              >
+              <label for="chBaño2">
+                <input type="checkbox" id="chBaño2" value="2" onclick="selectBaños(this.id)" />2</label
+              >
+              <label for="chBaño3">
+                <input type="checkbox" id="chBaño3" value="3" onclick="selectBaños(this.id)" />3</label
+              >
+              <label for="chBaño4">
+                <input type="checkbox" id="chBaño4" value="4+" onclick="selectBaños(this.id)" />4+</label
+              >
+            </div>
           </div>
-        </div>
-        <!-- -------- -->
-        <div class="distrito">
-          <div class="titulo">
-            <span>Distrito</span>
-          </div>
-          <div class="filtro">
-            <select name="s-distrito" id="">
-              <option value="Surco">Surco</option>
-              <option value="Miraflores">Miraflores</option>
-              <option value="San juan de Miraflores">San juan de M.</option>
-              <option value="Villa Maria del Triunfo">Villa Maria del Triunfo</option>
-              <option value="San Borja">San Borja</option>
-              <option value="San Isidro">San Isidro</option>
-            </select>
-          </div>
-        </div>
-        <!-- -------- -->
-        <!-- -----Precio--- -->
-        <div class="Precio">
-          <div class="titulo">
-            <span>Precio</span>
-          </div>
-          <div class="filtro">
-            <div class="tipo-moneda">
-              <label for="chMoneda1"
+          <!-- -------- -->
+          <!-- -----Dormitorios--- -->
+          <div class="dormitorios">
+            <div class="titulo">
+              <span>Dormitorios</span>
+            </div>
+            <div class="filtro">
+              <label for="chDormitorio1"
                 ><input
                   type="checkbox"
-                  id="chMoneda1"
-                  value="soles"
-                  onclick="selectModeda(this.id)"
-                />soles</label
+                  id="chDormitorio1"
+                  value="1"
+                  onclick="selectDormitorios(this.id)"
+                />1</label
               >
-              <label for="chMoneda2">
+              <label for="chDormitorio2">
                 <input
                   type="checkbox"
-                  id="chMoneda2"
-                  value="dolares"
-                  onclick="selectModeda(this.id)"
-                />dólares</label
+                  id="chDormitorio2"
+                  value="2"
+                  onclick="selectDormitorios(this.id)"
+                />2</label
+              >
+              <label for="chDormitorio3">
+                <input
+                  type="checkbox"
+                  id="chDormitorio3"
+                  value="3"
+                  onclick="selectDormitorios(this.id)"
+                />3</label
+              >
+              <label for="chDormitorio4">
+                <input
+                  type="checkbox"
+                  id="chDormitorio4"
+                  value="4+"
+                  onclick="selectDormitorios(this.id)"
+                />4+</label
               >
             </div>
-            <div class="monto">
-              <input type="number" id="min" placeholder="Desde" /><span>-</span>
-              <input type="number" id="max" placeholder="hasta" />
-              <button>></button>
-            </div>
           </div>
+          <!-- -------- -->
         </div>
-        <!-- -------- -->
-        <!-- -----Area Total m2--- -->
-        <div class="area-total">
-          <div class="titulo">
-            <span>Area Total (m2)</span>
-          </div>
-          <div class="filtro">
-            <div class="metros2">
-              <input type="number" id="desde" placeholder="Desde" /><span>-</span>
-              <input type="number" id="hasta" placeholder="hasta" />
-              <button>></button>
-            </div>
-          </div>
-        </div>
-        <!-- -------- -->
-        <!-- -----Baños--- -->
-        <div class="baños">
-          <div class="titulo">
-            <span>Baños</span>
-          </div>
-          <div class="filtro">
-            <label for="chBaño1"
-              ><input type="checkbox" id="chBaño1" value="1+" onclick="selectBaños(this.id)" />1</label
-            >
-            <label for="chBaño2">
-              <input type="checkbox" id="chBaño2" value="2" onclick="selectBaños(this.id)" />2</label
-            >
-            <label for="chBaño3">
-              <input type="checkbox" id="chBaño3" value="3" onclick="selectBaños(this.id)" />3</label
-            >
-            <label for="chBaño4">
-              <input type="checkbox" id="chBaño4" value="4+" onclick="selectBaños(this.id)" />4+</label
-            >
-          </div>
-        </div>
-        <!-- -------- -->
-        <!-- -----Dormitorios--- -->
-        <div class="dormitorios">
-          <div class="titulo">
-            <span>Dormitorios</span>
-          </div>
-          <div class="filtro">
-            <label for="chDormitorio1"
-              ><input
-                type="checkbox"
-                id="chDormitorio1"
-                value="1"
-                onclick="selectDormitorios(this.id)"
-              />1</label
-            >
-            <label for="chDormitorio2">
-              <input
-                type="checkbox"
-                id="chDormitorio2"
-                value="2"
-                onclick="selectDormitorios(this.id)"
-              />2</label
-            >
-            <label for="chDormitorio3">
-              <input
-                type="checkbox"
-                id="chDormitorio3"
-                value="3"
-                onclick="selectDormitorios(this.id)"
-              />3</label
-            >
-            <label for="chDormitorio4">
-              <input
-                type="checkbox"
-                id="chDormitorio4"
-                value="4+"
-                onclick="selectDormitorios(this.id)"
-              />4+</label
-            >
-          </div>
-        </div>
-        <!-- -------- -->
-        <div class="espacio-blanco"></div>
       </aside>
       <!-- ========= -->
     </main>

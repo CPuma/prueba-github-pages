@@ -140,6 +140,9 @@ header {
 }
 
 /* menu logo COLOR WHITE */
+.pushbar.from_right {
+  width: 300px !important;
+}
 .pushbar .title {
   align-self: center;
 }
@@ -289,6 +292,13 @@ footer {
   color: #d6581d;
 }
 
+.navbar-main .pushbar.from_right.opened .h-sociales {
+  height: 80px;
+}
+.navbar-main .pushbar.from_right.opened .f-contacto.flex-center {
+  padding: 0 !important;
+}
+
 @media (min-width: 850px) {
   /* header {
     height: 50px;
@@ -298,7 +308,12 @@ footer {
     display: flex;
   }
   .navbar-main {
-    width: 95%;
+    padding: 0 6% 0 3%;
+
+    /* width: 95%; */
+    width: 97%;
+    max-width: 1200px;
+
     position: relative;
     border-radius: 0.2em;
     -webkit-border-radius: 0.2em;
@@ -325,7 +340,7 @@ footer {
     width: 100%;
     flex-flow: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
   }
 
   .menu-xl li {

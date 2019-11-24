@@ -26,13 +26,22 @@
   font-family: 'Varela';
   src: url(/assets/fonts/varela/Varela-Regular.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Roboto';
+  src: url(/assets/fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url(/assets/fonts/Gotham/GothamRegular.otf) format('truetype');
+}
 
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
   /* font-family: "Nunito Sans", sans-serif; */
   /* font-family: "Arial CE Regular"; */
-  font-family: 'Varela';
+  font-family: 'Gotham';
 }
 
 html {
@@ -99,4 +108,11 @@ input {
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
+
+  height: 2.5rem;
+  border: 1px solid #7e7e80;
 }
+
+/* ============== SPLIDE PURO */
+
+
