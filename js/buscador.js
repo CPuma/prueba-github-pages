@@ -50,7 +50,7 @@ for (let i = 0; i < inmublesSplides.length; i++) {
       cover: true,
       pagination: true,
       focus: 'center',
-      width: '105%',
+      width: '110%',
       trimSpace: false
     }).mount();
   });

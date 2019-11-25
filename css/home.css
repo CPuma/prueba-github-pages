@@ -1,11 +1,11 @@
 main.home {
-  margin-top: 60px;
+  margin-top: 70px;
   width: 100%;
   height: auto;
 }
-@media (min-width: 800px) {
+@media (min-width: 850px) {
   main.home {
-    margin-top: 40px;
+    margin-top: 80px;
   }
   .portada {
     height: calc(90vh - 40px);
@@ -18,7 +18,7 @@ main.home {
 /* ==============    PORTADA  ===========*/
 .portada {
   width: 100%;
-  height: calc(90vh - 60px);
+  height: calc(90vh - 70px);
   min-height: 400px;
   max-height: 750px;
   display: grid;

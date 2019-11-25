@@ -1,11 +1,11 @@
 main {
-  margin: 62px auto 20px auto;
+  margin: 75px auto 20px auto;
 
-  width: 98%;
+  width: 100%;
   max-width: 1100px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: minmax(300px, 50vh) 110px 110px auto auto 350px auto 430px;
+  grid-template-rows: minmax(300px, 50vh) 110px 110px auto auto 450px auto 430px;
   grid-template-areas:
     'fotos'
     'info-principal'
@@ -16,15 +16,23 @@ main {
     'contactar-agente'
     'propiedades-similares';
 }
-@media (min-width: 850px) {
-  main {
-    margin: 95px auto 20px auto;
-  }
-}
+
 @media (min-width: 675px) {
   main {
-    grid-template-columns: auto minmax(250px, 38%);
-    grid-template-rows: 450px 110px repeat(4, minmax(200px, auto));
+    grid-template-columns: auto minmax(260px, 33%);
+    grid-template-rows: 450px 110px auto auto 450px 430px;
+    grid-template-areas:
+      'fotos fotos'
+      'info-principal precio'
+      'info-complementaria contactar-agente'
+      'descripcion contactar-agente'
+      'ubicacion ubicacion'
+      'propiedades-similares  propiedades-similares';
+  }
+}
+@media (min-width: 850px) {
+  main {
+    margin: 115px auto 20px auto;
     grid-template-areas:
       'fotos fotos'
       'info-principal precio'
@@ -49,17 +57,36 @@ main {
 }
 .splide-principal {
   grid-area: splide-principal;
-  background: red;
+  background: #e7e7e7;
   position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.splide-principal .splide {
+  position: absolute;
+}
+.splide-principal .splide .splide__track {
   width: 100%;
   height: 100%;
 }
 .splide-secundario {
   display: none;
   grid-area: splide-secundario;
-  background: yellow;
+  background: #e7e7e7;
   position: relative;
   width: 100%;
+  padding: 0;
+}
+.splide-secundario .splide {
+  height: 100%;
+  padding: 0;
+}
+.splide-secundario .splide--nav > .splide__track > .splide__list > .splide__slide.is-active {
+  border-color: red;
+  border-width: 3px 0;
 }
 @media (min-width: 675px) {
   .fotos {
@@ -72,61 +99,6 @@ main {
     display: unset;
   }
 }
-
-/* .splide-principal .splide {
-  position: absolute;
-  max-width: 100%;
-  width: 100%;
-  height: 100%;
-}
-.splide-principal .splide__track {
-  position: relative;
-  width: 98%;
-  height: 100%;
-}
-.splide-principal .splide__list {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.splide-principal .splide__slide {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.splide-principal .splide__slide img {
-  height: auto;
-  position: relative;
-   bottom: -15%; 
-  width: 100%;
-  object-fit: cover;
-
-  transition: all 1s ease-out;
-  -webkit-transition: all 1s ease-out;
-  -moz-transition: all 1s ease-out;
-  -ms-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
-}
-
-.splide-principal .splide__arrow--prev {
-  left: 0;
-}
-.splide-principal .splide__arrow--next {
-  right: 0;
-}
-.splide-principal .splide__arrow {
-  z-index: 1000;
-  /* appearance: none;
-  background: none; 
-}
-.splide-principal .splide__arrow svg {
-  fill: rgb(184, 181, 181);
-}
-.splide-principal .splide:hover .splide__arrow svg {
-  fill: rgb(255, 255, 255);
-} */
 
 /* ============ Info PRINCIPAL =================== */
 .info-principal {
@@ -206,13 +178,13 @@ main {
 }
 .info-complementaria ul li > span {
   display: block;
-  width: 120px;
+  width: 140px;
   font-size: 0.75rem;
-  color: rgb(117, 116, 116);
+  color: rgb(248, 86, 37);
 }
 .info-complementaria ul li > i {
   display: block;
-  width: calc(100%-120px);
+  width: calc(100%-140px);
   font-size: 0.85rem;
   color: #1f1e1e;
   font-style: normal;
@@ -234,21 +206,43 @@ main {
 /* ======= UBICACION ======== */
 .ubicacion {
   grid-area: ubicacion;
-  background: red;
+  /* background: red; */
+  margin: 1.5rem 0;
+  padding: 1rem;
+}
+.ubicacion h4 {
+  padding: 0.2rem 0;
+}
+.ubicacion p {
+  font-size: 0.8rem;
+  margin: 0.6rem 0;
+}
+.ubicacion .google-maps {
+  width: 100%;
+  height: 350px;
+  box-shadow: 1px 4px 10px rgb(173, 173, 173);
+}
+.ubicacion .google-maps img {
+  width: 100%;
+  height: 100%;
 }
 
 /* ======== CONTACTAR AGENTE ========= */
 .contactar-agente {
   grid-area: contactar-agente;
-  margin: 2rem 0;
-  padding: 1rem;
-  background: rgb(43, 43, 207);
-  display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 150px 40px 120px 65px;
-  grid-template-areas: 'foto-agente' 'sociales-agente' 'info-agente' 'opciones ';
+  /* margin: 2rem 0; */
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
 }
 /* ----- */
+
+.container-agente {
+  box-shadow: 1px 4px 10px rgb(173, 173, 173);
+  width: 90%;
+  padding: 1rem 0.5rem;
+  height: fit-content;
+}
 .foto-agente {
   grid-area: foto-agente;
   display: flex;
@@ -267,14 +261,41 @@ main {
   grid-area: info-agente;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 0.7rem;
   font-size: 0.9rem;
-  color: white;
+  color: rgb(82, 82, 82);
 }
 .info-agente .nombre-agente {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  margin: 0.5rem;
+}
+.info-agente p {
+  margin: 0.3rem;
+}
+.info-agente .frase {
+  font-size: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+  line-height: 1.5rem;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+.info-agente .frase .quotes {
+  font-size: 0.7rem;
+  position: relative;
+  top: -0.2rem;
+  color: rgb(59, 59, 59);
+
+  padding: 0 0.3rem;
+}
+
+.info-agente .mis-propiedades {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  color: blue;
+  cursor: pointer;
 }
 
 /* ------- */
@@ -285,11 +306,11 @@ main {
   justify-content: space-evenly;
   align-items: center;
   padding: 1rem;
-  background: #090080b2;
+  /* background: #090080b2; */
 }
 .sociales-agente a {
-  font-size: 1.2rem;
-  color: #fafafa;
+  font-size: 1.4rem;
+  color: rgb(82, 82, 82);
 }
 
 /* -------- */
@@ -300,46 +321,45 @@ main {
   flex-direction: column;
   justify-content: space-between;
 }
-.opciones a {
-  width: 100%;
-  height: 30px;
+.opciones button {
+  align-self: center;
+  width: 80%;
+  height: 35px;
   display: flex;
+
+  border: none;
+  /* background: #f02b2b; */
+  background: #fafafae3;
+  /* color: #fafafa; */
+  /* color: #1f1e1e; */
+  color: red;
+  /* border: 1px solid #1f1e1e; */
+  border: 1px solid red;
+
   justify-content: center;
   align-items: center;
   text-align: center;
-
   cursor: pointer;
-  background: #fafafae3;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
-.opciones a:hover {
+.opciones button:hover {
   background: #fafafa;
-}
-
-@media (min-width: 500px) {
-  .contactar-agente {
-    grid-template-columns: 2fr 3fr;
-    grid-template-rows: 3fr 1fr;
-    grid-template-areas: 'foto-agente info-agente' 'sociales-agente opciones';
-  }
-}
-@media (min-width: 850px) {
-  .contactar-agente {
-    grid-template-columns: 1fr;
-    grid-template-rows: 3fr 1fr 3fr 2fr;
-    grid-template-areas: 'foto-agente' 'sociales-agente' 'info-agente' 'opciones';
-  }
 }
 
 /* ======== PROPIEDADES SIMILARES ===== */
 
 .propiedades-similares {
-  margin: 1rem;
+  margin: 1rem 0;
 
   position: relative;
   grid-area: propiedades-similares;
 }
 .propiedades-similares .cabecera {
-  position: absolute;
+  position: relative;
   height: 30px;
   width: 100%;
   padding: 0 1rem;
@@ -347,6 +367,9 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.propiedades-similares .cards-container {
+  position: relative;
 }
 .propiedades-similares .cabecera h4 {
   font-size: 1.1rem;
@@ -359,10 +382,9 @@ main {
 }
 
 .propiedades-similares .cards-container {
-  /* margin: 1rem 0; */
   position: absolute;
   width: 100%;
-  height: 350;
+  height: 360px;
   bottom: 0;
 }
 .propiedades-similares .cards-container .splide {
