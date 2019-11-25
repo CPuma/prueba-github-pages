@@ -12,6 +12,7 @@ function selectBaños(id) {
   }
   document.getElementById(id).checked = true;
 }
+
 function selectDormitorios(id) {
   for (var i = 1; i <= 4; i++) {
     document.getElementById('chDormitorio' + i).checked = false;
@@ -23,7 +24,7 @@ function selectDormitorios(id) {
 // ==========OCULTANDO FILTROS=========
 let filtro = document.getElementById('filtro');
 
-let ocultarFiltro = function() {
+let ocultarFiltro = function () {
   if (window.innerWidth < 850) {
     filtro.classList.add('pushbar');
     filtro.classList.add('from_left');
@@ -35,7 +36,7 @@ let ocultarFiltro = function() {
 
 ocultarFiltro();
 
-window.addEventListener('resize', function(e) {
+window.addEventListener('resize', function (e) {
   ocultarFiltro();
 });
 // =====================================00
@@ -44,7 +45,7 @@ window.addEventListener('resize', function(e) {
 let inmublesSplides = document.getElementsByClassName('inmueble_splide');
 for (let i = 0; i < inmublesSplides.length; i++) {
   let id = '#' + inmublesSplides[i].id;
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     // new Splide('#image-slider', {
     new Splide(id, {
       cover: true,
@@ -54,4 +55,15 @@ for (let i = 0; i < inmublesSplides.length; i++) {
       trimSpace: false
     }).mount();
   });
+}
+
+
+let cards = document.getElementsByClassName("general");
+
+for (let i = 0; i < cards.length; i++) {
+  console.log(i);
+  cards[i].addEventListener('click', function () {
+    let link = document.querySelector(`a[data-id="${this.id}"]`);
+    link.click();
+  })
 }

@@ -1,35 +1,8 @@
 @font-face {
-  font-family: 'Arial CE Regular';
-  src: url(/assets/fonts/arial_ce/ArialCE.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Arial CE Bold';
-  src: url(/assets/fonts/arial_ce/ArialCEBold.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'SegoeRegular';
-  src: url(/assets/fonts/segoe/Segoe\UI.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'SegoeBold';
-  src: url(/assets/fonts/segoe/Segoe\UI\Bold.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Muli';
-  src: url(/assets/fonts/muli/Muli-VariableFont:wght.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'SourceSans';
-  src: url(/assets/fonts/sourcesans/SourceSansPro-Regular.otf) format('truetype');
-}
-@font-face {
-  font-family: 'Varela';
-  src: url(/assets/fonts/varela/Varela-Regular.ttf) format('truetype');
-}
-@font-face {
   font-family: 'Roboto';
   src: url(/assets/fonts/Roboto/Roboto-Regular.ttf) format('truetype');
 }
+
 @font-face {
   font-family: 'Gotham';
   src: url(/assets/fonts/Gotham/GothamRegular.otf) format('truetype');
@@ -39,9 +12,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* font-family: "Nunito Sans", sans-serif; */
-  /* font-family: "Arial CE Regular"; */
-  font-family: 'Gotham';
+  font-family: 'Gotham', sans-serif;
 }
 
 html {
@@ -63,11 +34,13 @@ html {
 .fixed {
   position: fixed;
 }
+
 body {
   max-width: 100vw;
   /* background: #e7e7e7; */
   background: #fafafa;
 }
+
 .container {
   max-width: 1100px;
 
@@ -78,14 +51,13 @@ body {
   /* height: auto; */
 }
 
-input[type='text'] {
-}
+input[type='text'] {}
+
 input:focus,
 textarea:focus,
 select:focus,
 button:focus {
-  outline-offset: 0px !important
-  ;
+  outline-offset: 0px !important;
   outline: none !important;
   /* border: none; */
 }
@@ -99,6 +71,7 @@ input[type='number']::-webkit-outer-spin-button {
 select {
   background: white;
 }
+
 select,
 button,
 input {
@@ -114,6 +87,11 @@ input {
   border: 1px solid #dfdfe2;
 }
 
+a {
+  appearance: none;
+  font-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
 /* ============== SPLIDE PURO */
-
-

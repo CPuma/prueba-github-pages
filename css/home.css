@@ -3,10 +3,12 @@ main.home {
   width: 100%;
   height: auto;
 }
+
 @media (min-width: 850px) {
   main.home {
     margin-top: 80px;
   }
+
   .portada {
     height: calc(90vh - 40px);
   }
@@ -25,6 +27,7 @@ main.home {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 3fr;
   background: gray;
+  background: url(/img/fondo1.webp);
 }
 
 .portada .frase {
@@ -65,9 +68,11 @@ main.home {
   -ms-border-radius: 0.4em;
   -o-border-radius: 0.4em;
 }
+
 .form-item.select {
   width: 350px;
 }
+
 /* ======  SELECT BOX */
 
 select,
@@ -146,21 +151,25 @@ button {
   overflow: hidden;
   border: none;
 }
+
 .form-item input {
   text-indent: 1.2em;
 }
+
 .form-item button {
   background: rgb(216, 5, 26);
   font-size: 1em;
   color: #fafafa;
   cursor: pointer;
 }
+
 .form-item button:hover {
   background: rgb(216, 5, 26);
   font-size: 1em;
   color: #fafafa;
   font-weight: 700;
 }
+
 @media (min-width: 750px) {
   .form-filtros {
     max-width: 750px;
@@ -179,6 +188,7 @@ button {
     -ms-border-radius: 0.5em;
     -o-border-radius: 0.5em;
   }
+
   .form-item {
     margin-top: 0;
 
@@ -192,6 +202,7 @@ button {
     -ms-border-radius: 0;
     -o-border-radius: 0;
   }
+
   .form-item.button {
     width: 15%;
     max-width: 200px;
@@ -201,6 +212,7 @@ button {
     width: 45%;
     max-width: 300px;
   }
+
   .form-item input[type="text"] {
     font-size: 0.8em;
   }
@@ -209,11 +221,13 @@ button {
     width: 25%;
     max-width: 170px;
   }
+
   .form-item.select::after {
     padding: 0 0.3em;
     text-indent: 0.2em;
   }
 }
+
 /* ============ULTIMAS PROPIEDADES============== */
 
 .ultimas-propiedades {
@@ -228,6 +242,7 @@ button {
   align-items: center;
   padding: 1em 0 3em 0;
 }
+
 /* === */
 
 .grid-area-titulo {
@@ -238,6 +253,7 @@ button {
   align-items: center;
   margin: 1em 0 2em 0;
 }
+
 .grid-area-titulo h3 {
   /* color: white; */
   /* color: red; */
@@ -245,6 +261,7 @@ button {
   font-family: "Arial CE Bold", Helvetica, sans-serif;
   /* letter-spacing: 0.05em; */
 }
+
 .grid-area-titulo a {
   text-decoration: none;
   color: blue;
@@ -261,11 +278,13 @@ button {
 
   background: blue;
 }
+
 @media (min-width: 700px) {
   .grid-area-titulo {
     width: 82%;
     justify-content: space-between;
   }
+
   .grid-area-titulo a {
     padding-left: 3em;
     display: block;
@@ -281,13 +300,30 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #e9e7e7;
+  background: #7e7e7e;
 
   width: 100%;
   min-height: 400px;
   overflow: hidden;
   text-align: center;
 }
+
+.valuaciones .container {
+  position: absolute;
+  width: 100%;
+}
+
+.valuaciones .logo-fondo {
+  position: absolute;
+  left: 5px;
+  top: 0;
+}
+
+.valuaciones .logo-fondo img {
+  opacity: .7;
+
+}
+
 /* === */
 .valuaciones h3 {
   font-size: 1.4em;
@@ -297,6 +333,7 @@ button {
 .valuaciones p {
   display: none;
 }
+
 .valuaciones button {
   width: 200px;
   height: 2.5em;
@@ -316,6 +353,7 @@ button {
   -ms-border-radius: 1em;
   -o-border-radius: 1em;
 }
+
 .valuaciones button:hover {
   text-decoration: none;
   color: black;
@@ -350,6 +388,7 @@ button {
   .valuaciones {
     padding: 2em 0;
   }
+
   .valuaciones p {
     display: block;
     margin: auto;
@@ -357,12 +396,11 @@ button {
     text-align: justify;
     padding: 1em 0 2em 0;
   }
-} /* ======================================== */
-.se-un-asesor {
 }
 
-.contactanos {
-}
+/* ======================================== */
+.se-un-asesor {}
 
-.como-llegar {
-}
+.contactanos {}
+
+.como-llegar {}

@@ -1,556 +1,478 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
 
-    <!-- FONTS -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap"
-      rel="stylesheet"
-      r
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
 
-    <!-- FONT AWESOME -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
-      crossorigin="anonymous"
-    />
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet" r />
 
-    <!-- PUSHBAR CSS-->
-    <link rel="stylesheet" href="assets/libraries/pushbar/pushbar.css" />
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
 
-    <!-- Splide -->
-    <!-- <link
+  <!-- PUSHBAR CSS-->
+  <link rel="stylesheet" href="assets/libraries/pushbar/pushbar.css" />
+
+  <!-- Splide -->
+  <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.2.0/dist/css/splide.min.css"
     /> -->
-    <link rel="stylesheet" href="assets/libraries/splide/splide.min.css" />
-    <link rel="stylesheet" href="css/splide-cards.css" />
+  <link rel="stylesheet" href="assets/libraries/splide/splide.min.css" />
+  <link rel="stylesheet" href="css/splide-cards.css" />
 
-    <!-- ESTILOS -->
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/remax.css" />
-    <link rel="stylesheet" href="css/header-footer.css" />
-    <link rel="stylesheet" href="css/home.css" />
-  </head>
+  <!-- ESTILOS -->
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/remax.css" />
+  <link rel="stylesheet" href="css/header-footer.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
 
-  <body>
-    <!-- =========  HEADER  ======== -->
+<body>
+  <!-- =========  HEADER  ======== -->
 
-    <header>
-      <div id="navbar-top" class="navbar-top">
-        <!-- completar cuando sea pantalla mas grande -->
-        <div class="info">
-          <span class=""><i class="fas fa-phone-alt"></i>(01) 595 8881</span>
-          <span class=""
-            ><i class="fas fa-envelope"></i
-            ><a rel="nofollow" href="mailto:informes@remaxmetropolis.com"
-              >informes@remaxmetropolis.com</a
-            >
-          </span>
-          <div class="nav-social">
-            <a href="#" rel="nofollow" title="Siguenos en Facebook"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a href="#" rel="nofollow" title="Siguenos en Instagram"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="#" rel="nofollow" title="Siguenos en Youtube"
-              ><i class="fab fa-youtube"></i
-            ></a>
-          </div>
+  <header>
+    <div id="navbar-top" class="navbar-top">
+      <!-- completar cuando sea pantalla mas grande -->
+      <div class="info">
+        <span class=""><i class="fas fa-phone-alt"></i>(01) 595 8881</span>
+        <span class=""><i class="fas fa-envelope"></i><a rel="nofollow"
+            href="mailto:informes@remaxmetropolis.com">informes@remaxmetropolis.com</a>
+        </span>
+        <div class="nav-social">
+          <a href="#" rel="nofollow" title="Siguenos en Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" rel="nofollow" title="Siguenos en Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" rel="nofollow" title="Siguenos en Youtube"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
-      <div class="navbar-main ">
-        <div class="logo logo-remax">
-          <h1 id="remax">
-            RE<span class="content-slash"
-              ><span class="border-slash"
-                ><span class="slash"></span
-              ></span> </span
-            >MAX
-          </h1>
-          <h2 id="metropolis">Metrópolis</h2>
-        </div>
-        <!-- ============================ -->
-        <!-- ============ MENU ============ -->
-        <nav class="nav-menu">
-          <div class="menu-xl">
-            <ul>
-              <li>Venta</li>
-              <li>Alquiler</li>
-              <!-- <li>Asesores</li> -->
-              <li>Sé un Asesor</li>
-              <!-- <li>BLOG</li> -->
-              <li>Valua tu Inmueble</li>
-            </ul>
-          </div>
-          <div data-pushbar-target="right" class="menu-hamburguesa">
-            <i class="menu-icon fas fa-bars"></i>
-          </div>
-          <div data-pushbar-id="right" class="pushbar from_right">
-            <span data-pushbar-close class="close push_right"></span>
-            <!-- ==== REMAX MENU TITULO ===== -->
-            <!-- <div class="title"><span>REMAX <br>Metropolis</span></div> -->
-
-            <h2 class="logo-remax title">
-              <span id="remax"
-                >RE<span class="content-slash"
-                  ><span class="border-slash"
-                    ><span class="slash"></span
-                  ></span> </span
-                >MAX</span
-              >
-              <span id="metropolis">Metrópolis</span>
-            </h2>
-            <!-- ============================ -->
-
-            <ul class="menu">
-              <li>Venta</li>
-              <li>Alquiler</li>
-              <li>Asesores</li>
-              <li>Se Asesor Remax</li>
-              <li>BLOG</li>
-              <li>Valua tu Inmueble</li>
-            </ul>
-            <div class="h-sociales">
-              <div class="f-social-networks">
-                <a
-                  href="#"
-                  rel="nofollow"
-                  title="Siguenos en Facebook"
-                  class=" fab fa-facebook"
-                ></a>
-                <a
-                  href="#"
-                  rel="nofollow"
-                  title="Siguenos en Instagram"
-                  class=" fab fa-instagram"
-                ></a>
-                <a
-                  href="#"
-                  rel="nofollow"
-                  title="Siguenos en Youtube"
-                  class=" fab fa-youtube"
-                ></a>
-              </div>
-              <div class="f-contacto flex-center">
-                <span class=""
-                  ><i class="fas fa-phone-alt"></i>(01) 595 8881</span
-                >
-              </div>
-            </div>
-          </div>
-        </nav>
-        <!-- ============================ -->
-      </div>
-    </header>
-
-    <!-- =========  BODY  ======== -->
-    <main class="home" title="Remax Metropolis">
-      <section class="portada">
-        <div class="frase">
-          <h2>Encuentra la casa de tus sueños</h2>
-        </div>
-        <form action="" class="form-filtros">
-          <div class="form-item select">
-            <select name="tipoOperacion" id="tipoOperacion">
-              <div class="options">
-                <option value="venta">Venta</option>
-                <option value="alquiler">Alquiler</option>
-              </div>
-            </select>
-          </div>
-          <div class="form-item select ">
-            <select name="tipoPropiedad" id="tipoPropiedad">
-              <option value="casa">Casa</option>
-              <option value="departamento">Departamento</option>
-              <option value="playa">Casa Playa</option>
-            </select>
-          </div>
-
-          <div class="form-item input">
-            <input
-              type="text"
-              name="ubicacion"
-              id="ubicacion"
-              placeholder="Ingrese Distrito, Ubigeo o descripcion"
-            />
-          </div>
-          <div class="form-item button"><button>Buscar</button></div>
-        </form>
-      </section>
-
-      <section class="ultimas-propiedades">
-        <div class="grid-area-titulo container">
-          <h3>Las Mejores Propiedades</h3>
-          <span><a href="#">Ver mas</a></span>
-        </div>
-        <div class="cards-container container">
-          <div id="card-slider" class="splide">
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide">
-                  <article class="card">
-                    <div class="card_img">
-                      <img
-                        src="https://splidejs.com/wp-content/uploads/2019/08/t02.jpg"
-                        alt=""
-                      />
-                      <div class="card_destacado">
-                        <p>Frente al Mar</p>
-                      </div>
-
-                      <div class="card_tipo_propiedad">
-                        <p>
-                          Casa
-                        </p>
-                      </div>
-                    </div>
-                    <div class="card_descripcion">
-                      <div class="card_descripcion_propiedad">
-                        <p class="card_precio">
-                          <span class="tipo_moneda">US$</span>5,000 000
-                        </p>
-                        <div class="card_direccion">
-                          <p>
-                            San juan de Miraflores
-                          </p>
-                          <p>
-                            Lima
-                          </p>
-                        </div>
-                        <p class="card_distrito"></p>
-                      </div>
-                      <div class="card_caracteristicas">
-                        <p>3<i class="fas fa-bed"></i></p>
-                        <p>2<i class="fas fa-toilet"></i></p>
-
-                        <p>
-                          60<span class="fas">m<sup>2</sup></span>
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-                </li>
-
-                <li class="splide__slide">
-                  <article class="card">
-                    <div class="card_img">
-                      <img
-                        src="https://splidejs.com/wp-content/uploads/2019/08/t02.jpg"
-                        alt=""
-                      />
-                      <div class="card_destacado">
-                        <p>Frente al Mar</p>
-                      </div>
-                      <div class="card_caracteristicas">
-                        <p>3<i class="fas fa-bed"></i></p>
-                        <p>2<i class="fas fa-toilet"></i></p>
-
-                        <p>
-                          60<span class="fas">m<sup>2</sup></span>
-                        </p>
-                      </div>
-                      <div class="card_tipo_propiedad">
-                        <p>
-                          Casa
-                        </p>
-                      </div>
-                    </div>
-                    <div class="card_descripcion">
-                      <div class="card_descripcion_propiedad">
-                        <p class="card_precio">
-                          <span class="tipo_moneda">US$</span>5,000 000
-                        </p>
-                        <div class="card_direccion">
-                          <p>
-                            San juan de Miraflores
-                          </p>
-                          <p>
-                            Lima
-                          </p>
-                        </div>
-                        <p class="card_distrito"></p>
-                      </div>
-                      <div class="card_descripcion_agente">
-                        <img src="img/agentes/agente-1.jpg" alt="" />
-
-                        <p>
-                          Katiuska Perez
-                        </p>
-                        <p>
-                          <span>
-                            998885478
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-                </li>
-                <li class="splide__slide">
-                  <article class="card">
-                    <div class="card_img">
-                      <img
-                        src="https://splidejs.com/wp-content/uploads/2019/08/t02.jpg"
-                        alt=""
-                      />
-                      <div class="card_destacado">
-                        <p>Frente al Mar</p>
-                      </div>
-                      <div class="card_caracteristicas">
-                        <p>3<i class="fas fa-bed"></i></p>
-                        <p>2<i class="fas fa-toilet"></i></p>
-
-                        <p>
-                          60<span class="fas">m<sup>2</sup></span>
-                        </p>
-                      </div>
-                      <div class="card_tipo_propiedad">
-                        <p>
-                          Casa
-                        </p>
-                      </div>
-                    </div>
-                    <div class="card_descripcion">
-                      <div class="card_descripcion_propiedad">
-                        <p class="card_precio">
-                          <span class="tipo_moneda">US$</span>5,000 000
-                        </p>
-                        <div class="card_direccion">
-                          <p>
-                            San juan de Miraflores
-                          </p>
-                          <p>
-                            Lima
-                          </p>
-                        </div>
-                        <p class="card_distrito"></p>
-                      </div>
-                      <div class="card_descripcion_agente">
-                        <img src="img/agentes/agente-1.jpg" alt="" />
-
-                        <p>
-                          Maria Lopez
-                        </p>
-                        <p>
-                          <span>
-                            998885478
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-                </li>
-                <li class="splide__slide">
-                  <article class="card">
-                    <div class="card_img">
-                      <img
-                        src="https://splidejs.com/wp-content/uploads/2019/08/t02.jpg"
-                        alt=""
-                      />
-                      <div class="card_destacado">
-                        <p>Frente al Mar</p>
-                      </div>
-                      <div class="card_caracteristicas">
-                        <p>3<i class="fas fa-bed"></i></p>
-                        <p>2<i class="fas fa-toilet"></i></p>
-
-                        <p>
-                          60<span class="fas">m<sup>2</sup></span>
-                        </p>
-                      </div>
-                      <div class="card_tipo_propiedad">
-                        <p>
-                          Casa
-                        </p>
-                      </div>
-                    </div>
-                    <div class="card_descripcion">
-                      <div class="card_descripcion_propiedad">
-                        <p class="card_precio">
-                          <span class="tipo_moneda">US$</span>5,000 000
-                        </p>
-                        <div class="card_direccion">
-                          <p>
-                            San juan de Miraflores
-                          </p>
-                          <p>
-                            Lima
-                          </p>
-                        </div>
-                        <p class="card_distrito"></p>
-                      </div>
-                      <div class="card_descripcion_agente">
-                        <img src="img/agentes/agente-1.jpg" alt="" />
-
-                        <p>
-                          Maria Lopez
-                        </p>
-                        <p>
-                          <span>
-                            998885478
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-                </li>
-                <li class="splide__slide">
-                  <article class="card">
-                    <div class="card_img">
-                      <img
-                        src="https://splidejs.com/wp-content/uploads/2019/08/t02.jpg"
-                        alt=""
-                      />
-                      <div class="card_destacado">
-                        <p>Frente al Mar</p>
-                      </div>
-                      <div class="card_caracteristicas">
-                        <p>3<i class="fas fa-bed"></i></p>
-                        <p>2<i class="fas fa-toilet"></i></p>
-
-                        <p>
-                          60<span class="fas">m<sup>2</sup></span>
-                        </p>
-                      </div>
-                      <div class="card_tipo_propiedad">
-                        <p>
-                          Casa
-                        </p>
-                      </div>
-                    </div>
-                    <div class="card_descripcion">
-                      <div class="card_descripcion_propiedad">
-                        <p class="card_precio">
-                          <span class="tipo_moneda">US$</span>5,000 000
-                        </p>
-                        <div class="card_direccion">
-                          <p>
-                            San juan de Miraflores
-                          </p>
-                          <p>
-                            Lima
-                          </p>
-                        </div>
-                        <p class="card_distrito"></p>
-                      </div>
-                      <div class="card_descripcion_agente">
-                        <img src="img/agentes/agente-1.jpg" alt="" />
-
-                        <p>
-                          Katiuska Gutierres
-                        </p>
-                        <p>
-                          <span>
-                            998885478
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="valuaciones">
-        <div class="gratis"><span>GRATIS</span></div>
-        <div class=" container">
-          <!-- <h3 >Valuaciones</h3> -->
-          <h3>Quieres saber cuanto vale tu casa o departamento ?</h3>
-          <p>
-            Contamos con una base de datos y un algoritmo de alto desempeño que
-            te ayudara a conocer el precio promedio de tu propiedad , segun sus
-            caracteristicas y la zona en la que se encuentra.
-          </p>
-          <button>Valua tu Propiedad</button>
-        </div>
-      </section>
-      <!-- <section class="nuestros-asesores"></section> -->
-      <div class="se-un-asesor">
-        <div class="container"></div>
-      </div>
-      <!-- <section class="ultimas-noticias"></section>
-      <section class="blog"></section> -->
-      <section class="contactanos"></section>
-      <section class="como-llegar"></section>
-    </main>
-
-    <!-- =========  FOOTER  ======== -->
-    <div class="f-license-remax">
-      <span>"Cada oficina es de propiedad y operación independiente"</span>
-      <a rel="nofollow" href="https://www.remax.pe"
-        ><i>RE<span>/</span>MAX</i> Perú</a
-      >
     </div>
-    <footer>
-      <div class="footer-top">
-        <div class="f-social-networks">
-          <a
-            href="#"
-            rel="nofollow"
-            title="Siguenos en Facebook"
-            class=" fab fa-facebook"
-          ></a>
-          <a
-            href="#"
-            rel="nofollow"
-            title="Siguenos en Instagram"
-            class=" fab fa-instagram"
-          ></a>
-          <a
-            href="#"
-            rel="nofollow"
-            title="Siguenos en Youtube"
-            class="fab fa-youtube"
-          ></a>
+    <div class="navbar-main ">
+      <a class="logo logo-remax" href="/">
+        <h1 id="remax">
+          RE<span class="content-slash"><span class="border-slash"><span class="slash"></span></span> </span>MAX
+        </h1>
+        <h2 id="metropolis">Metrópolis</h2>
+      </a>
+      <!-- ============================ -->
+      <!-- ============ MENU ============ -->
+      <nav class="nav-menu">
+        <div class="menu-xl">
+          <ul>
+            <li><a href="/buscador.html">Venta</a></li>
+            <li><a href="/buscador.html"> Alquiler</a></li>
+            <!-- <li><a href=""> Asesores</li</a>> -->
+            <li><a href=""> Sé un Asesor</a></li>
+            <!-- <li><a href=""> BLOG</li</a>> -->
+            <li><a href=""> Valua tu Inmueble</a></li>
+          </ul>
+        </div>
+        <div data-pushbar-target="right" class="menu-hamburguesa">
+          <i class="menu-icon fas fa-bars"></i>
+        </div>
+        <div data-pushbar-id="right" class="pushbar from_right">
+          <span data-pushbar-close class="close push_right"></span>
+          <!-- ==== REMAX MENU TITULO ===== -->
+          <!-- <div class="title"><span>REMAX <br>Metropolis</span></div> -->
+
+          <a class="logo-remax title" href="/">
+            <span id="remax">RE<span class="content-slash"><span class="border-slash"><span class="slash"></span></span>
+              </span>MAX</span>
+            <span id="metropolis">Metrópolis</span>
+          </a>
+          <!-- ============================ -->
+
+          <ul class="menu">
+            <li><a href="/buscador.html">Venta</a></li>
+            <li><a href="/buscador.html">Alquiler</a></li>
+            <li><a href="/buscador.html">Asesores</a></li>
+            <li><a href="/buscador.html">Se Asesor Remax</a></li>
+            <li><a href="/buscador.html">BLOG</a></li>
+            <li><a href="/buscador.html">Valua tu Inmueble</a></li>
+          </ul>
+          <div class="h-sociales">
+            <div class="f-social-networks">
+              <a href="#" rel="nofollow" title="Siguenos en Facebook" class=" fab fa-facebook"></a>
+              <a href="#" rel="nofollow" title="Siguenos en Instagram" class=" fab fa-instagram"></a>
+              <a href="#" rel="nofollow" title="Siguenos en Youtube" class=" fab fa-youtube"></a>
+            </div>
+            <div class="f-contacto flex-center">
+              <span class=""><i class="fas fa-phone-alt"></i>(01) 595 8881</span>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- ============================ -->
+    </div>
+  </header>
+
+  <!-- =========  BODY  ======== -->
+  <main class="home" title="Remax Metropolis">
+    <section class="portada">
+      <div class="frase">
+        <h2>Encuentra la casa de tus sueños</h2>
+      </div>
+      <form action="" class="form-filtros">
+        <div class="form-item select">
+          <select name="tipoOperacion" id="tipoOperacion">
+            <div class="options">
+              <option value="venta">Venta</option>
+              <option value="alquiler">Alquiler</option>
+            </div>
+          </select>
+        </div>
+        <div class="form-item select ">
+          <select name="tipoPropiedad" id="tipoPropiedad">
+            <option value="casa">Casa</option>
+            <option value="departamento">Departamento</option>
+            <option value="playa">Casa Playa</option>
+          </select>
         </div>
 
-        <div class="f-contacto flex-center">
-          <span class=""><i class="fas fa-phone-alt"></i>(01) 595 8881</span>
-          <span class=""
-            ><i class="fas fa-envelope"></i
-            ><a rel="nofollow" href="mailto:informes@remaxmetropolis.com"
-              >informes@remaxmetropolis.com</a
-            >
-          </span>
-          <span class="">
-            <i class="fas fa-map-marker-alt"></i>Av. Los Próceres S/N Cuadra 10
-            Mz. B Lt.23, Santiago de Surco<br />Lima – Perú</span
-          >
+        <div class="form-item input">
+          <input type="text" name="ubicacion" id="ubicacion" placeholder="Ingrese Distrito, Ubigeo o descripcion" />
+        </div>
+        <div class="form-item button"><button>Buscar</button></div>
+      </form>
+    </section>
+
+    <section class="ultimas-propiedades">
+      <div class="grid-area-titulo container">
+        <h3>Las Mejores Propiedades</h3>
+        <span><a href="#">Ver mas</a></span>
+      </div>
+      <div class="cards-container container">
+        <div id="card-slider" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <article class="card">
+                  <div class="card_img">
+                    <img src="https://splidejs.com/wp-content/uploads/2019/08/t02.jpg" alt="" />
+                    <div class="card_destacado">
+                      <p>Frente al Mar</p>
+                    </div>
+
+                    <div class="card_tipo_propiedad">
+                      <p>
+                        Casa
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card_descripcion">
+                    <div class="card_descripcion_propiedad">
+                      <p class="card_precio">
+                        <span class="tipo_moneda">US$</span>5,000 000
+                      </p>
+                      <div class="card_direccion">
+                        <p>
+                          San juan de Miraflores
+                        </p>
+                        <p>
+                          Lima
+                        </p>
+                      </div>
+                      <p class="card_distrito"></p>
+                    </div>
+                    <div class="card_caracteristicas">
+                      <p>3<i class="fas fa-bed"></i></p>
+                      <p>2<i class="fas fa-toilet"></i></p>
+
+                      <p>
+                        60<span class="fas">m<sup>2</sup></span>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+
+              <li class="splide__slide">
+                <article class="card">
+                  <div class="card_img">
+                    <img src="https://splidejs.com/wp-content/uploads/2019/08/t02.jpg" alt="" />
+                    <div class="card_destacado">
+                      <p>Frente al Mar</p>
+                    </div>
+                    <div class="card_caracteristicas">
+                      <p>3<i class="fas fa-bed"></i></p>
+                      <p>2<i class="fas fa-toilet"></i></p>
+
+                      <p>
+                        60<span class="fas">m<sup>2</sup></span>
+                      </p>
+                    </div>
+                    <div class="card_tipo_propiedad">
+                      <p>
+                        Casa
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card_descripcion">
+                    <div class="card_descripcion_propiedad">
+                      <p class="card_precio">
+                        <span class="tipo_moneda">US$</span>5,000 000
+                      </p>
+                      <div class="card_direccion">
+                        <p>
+                          San juan de Miraflores
+                        </p>
+                        <p>
+                          Lima
+                        </p>
+                      </div>
+                      <p class="card_distrito"></p>
+                    </div>
+                    <div class="card_descripcion_agente">
+                      <img src="img/agentes/agente-1.jpg" alt="" />
+
+                      <p>
+                        Katiuska Perez
+                      </p>
+                      <p>
+                        <span>
+                          998885478
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="splide__slide">
+                <article class="card">
+                  <div class="card_img">
+                    <img src="https://splidejs.com/wp-content/uploads/2019/08/t02.jpg" alt="" />
+                    <div class="card_destacado">
+                      <p>Frente al Mar</p>
+                    </div>
+                    <div class="card_caracteristicas">
+                      <p>3<i class="fas fa-bed"></i></p>
+                      <p>2<i class="fas fa-toilet"></i></p>
+
+                      <p>
+                        60<span class="fas">m<sup>2</sup></span>
+                      </p>
+                    </div>
+                    <div class="card_tipo_propiedad">
+                      <p>
+                        Casa
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card_descripcion">
+                    <div class="card_descripcion_propiedad">
+                      <p class="card_precio">
+                        <span class="tipo_moneda">US$</span>5,000 000
+                      </p>
+                      <div class="card_direccion">
+                        <p>
+                          San juan de Miraflores
+                        </p>
+                        <p>
+                          Lima
+                        </p>
+                      </div>
+                      <p class="card_distrito"></p>
+                    </div>
+                    <div class="card_descripcion_agente">
+                      <img src="img/agentes/agente-1.jpg" alt="" />
+
+                      <p>
+                        Maria Lopez
+                      </p>
+                      <p>
+                        <span>
+                          998885478
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="splide__slide">
+                <article class="card">
+                  <div class="card_img">
+                    <img src="https://splidejs.com/wp-content/uploads/2019/08/t02.jpg" alt="" />
+                    <div class="card_destacado">
+                      <p>Frente al Mar</p>
+                    </div>
+                    <div class="card_caracteristicas">
+                      <p>3<i class="fas fa-bed"></i></p>
+                      <p>2<i class="fas fa-toilet"></i></p>
+
+                      <p>
+                        60<span class="fas">m<sup>2</sup></span>
+                      </p>
+                    </div>
+                    <div class="card_tipo_propiedad">
+                      <p>
+                        Casa
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card_descripcion">
+                    <div class="card_descripcion_propiedad">
+                      <p class="card_precio">
+                        <span class="tipo_moneda">US$</span>5,000 000
+                      </p>
+                      <div class="card_direccion">
+                        <p>
+                          San juan de Miraflores
+                        </p>
+                        <p>
+                          Lima
+                        </p>
+                      </div>
+                      <p class="card_distrito"></p>
+                    </div>
+                    <div class="card_descripcion_agente">
+                      <img src="img/agentes/agente-1.jpg" alt="" />
+
+                      <p>
+                        Maria Lopez
+                      </p>
+                      <p>
+                        <span>
+                          998885478
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="splide__slide">
+                <article class="card">
+                  <div class="card_img">
+                    <img src="https://splidejs.com/wp-content/uploads/2019/08/t02.jpg" alt="" />
+                    <div class="card_destacado">
+                      <p>Frente al Mar</p>
+                    </div>
+                    <div class="card_caracteristicas">
+                      <p>3<i class="fas fa-bed"></i></p>
+                      <p>2<i class="fas fa-toilet"></i></p>
+
+                      <p>
+                        60<span class="fas">m<sup>2</sup></span>
+                      </p>
+                    </div>
+                    <div class="card_tipo_propiedad">
+                      <p>
+                        Casa
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card_descripcion">
+                    <div class="card_descripcion_propiedad">
+                      <p class="card_precio">
+                        <span class="tipo_moneda">US$</span>5,000 000
+                      </p>
+                      <div class="card_direccion">
+                        <p>
+                          San juan de Miraflores
+                        </p>
+                        <p>
+                          Lima
+                        </p>
+                      </div>
+                      <p class="card_distrito"></p>
+                    </div>
+                    <div class="card_descripcion_agente">
+                      <img src="img/agentes/agente-1.jpg" alt="" />
+
+                      <p>
+                        Katiuska Gutierres
+                      </p>
+                      <p>
+                        <span>
+                          998885478
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <span>© 2020 RE/MAX Metropolis </span>
-        <br />by <a rel="sponsored" href="https://www.terk.pe">TERK </a>
+    </section>
+
+    <section class="valuaciones">
+      <div class="logo-fondo">
+        <img src="/img/globo2.png" alt="">
       </div>
-    </footer>
+      <div class="gratis"><span>GRATIS</span></div>
+      <div class=" container">
+        <!-- <h3 >Valuaciones</h3> -->
+        <h3>Quieres saber cuanto vale tu casa o departamento ?</h3>
+        <p>
+          Contamos con una base de datos y un algoritmo de alto desempeño que
+          te ayudara a conocer el precio promedio de tu propiedad , segun sus
+          caracteristicas y la zona en la que se encuentra.
+        </p>
+        <button>Valua tu Propiedad</button>
+      </div>
 
-    <!-- JQUERY -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    </section>
+    <!-- <section class="nuestros-asesores"></section> -->
+    <div class="se-un-asesor">
+      <div class="container"></div>
+    </div>
+    <!-- <section class="ultimas-noticias"></section>
+      <section class="blog"></section> -->
+    <section class="contactanos"></section>
+    <section class="como-llegar"></section>
+  </main>
 
-    <!-- PUSHBAR JS -->
-    <script src="assets/libraries/pushbar/pushbar.js"></script>
-    <script type="text/javascript">
-      var pushbar = new Pushbar({
-        blur: true,
-        overlay: true
-      });
-    </script>
+  <!-- =========  FOOTER  ======== -->
+  <div class="f-license-remax">
+    <span>"Cada oficina es de propiedad y operación independiente"</span>
+    <a rel="nofollow" href="https://www.remax.pe"><i>RE<span>/</span>MAX</i> Perú</a>
+  </div>
+  <footer>
+    <div class="footer-top">
+      <div class="f-social-networks">
+        <a href="#" rel="nofollow" title="Siguenos en Facebook" class=" fab fa-facebook"></a>
+        <a href="#" rel="nofollow" title="Siguenos en Instagram" class=" fab fa-instagram"></a>
+        <a href="#" rel="nofollow" title="Siguenos en Youtube" class="fab fa-youtube"></a>
+      </div>
 
-    <!-- SPLIDE 1.2.0-- SLIDERSS -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.2.0/dist/js/splide.min.js"></script> -->
-    <script src="assets/libraries/splide/splide.min.js"></script>
-    <script src="js/splide_home.js"></script>
+      <div class="f-contacto flex-center">
+        <span class=""><i class="fas fa-phone-alt"></i>(01) 595 8881</span>
+        <span class=""><i class="fas fa-envelope"></i><a rel="nofollow"
+            href="mailto:informes@remaxmetropolis.com">informes@remaxmetropolis.com</a>
+        </span>
+        <span class="">
+          <i class="fas fa-map-marker-alt"></i>Av. Los Próceres S/N Cuadra 10
+          Mz. B Lt.23, Santiago de Surco<br />Lima – Perú</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2020 RE/MAX Metropolis </span>
+      <br />by <a rel="sponsored" href="https://www.terk.pe">TERK </a>
+    </div>
+  </footer>
 
-    <script src="js/main.js"></script>
-  </body>
+  <!-- JQUERY -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
+  <!-- PUSHBAR JS -->
+  <script src="assets/libraries/pushbar/pushbar.js"></script>
+  <script type="text/javascript">
+    var pushbar = new Pushbar({
+      blur: true,
+      overlay: true
+    });
+  </script>
+
+  <!-- SPLIDE 1.2.0-- SLIDERSS -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.2.0/dist/js/splide.min.js"></script> -->
+  <script src="assets/libraries/splide/splide.min.js"></script>
+  <script src="js/splide_home.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+
 </html>
